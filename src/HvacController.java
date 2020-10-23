@@ -1,3 +1,5 @@
+import javax.swing.ButtonGroup;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -24,7 +26,7 @@ public class HvacController extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    public void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -33,17 +35,17 @@ public class HvacController extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jLabel4 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jSlider1 = new javax.swing.JSlider();
+        fanoff = new javax.swing.JRadioButton();
+        fanon = new javax.swing.JRadioButton();
+        fanSpeedSetter = new javax.swing.JSlider();
         jLabel5 = new javax.swing.JLabel();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton5 = new javax.swing.JRadioButton();
-        jRadioButton6 = new javax.swing.JRadioButton();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        autoMode = new javax.swing.JRadioButton();
+        winterMode = new javax.swing.JRadioButton();
+        summerMode = new javax.swing.JRadioButton();
+        temperature = new javax.swing.JTextField();
+        humidity = new javax.swing.JTextField();
+        airQuality = new javax.swing.JTextField();
+        submit = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -69,57 +71,69 @@ public class HvacController extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel4.setText("Fan");
 
-        jRadioButton1.setFont(new java.awt.Font("Tw Cen MT", 1, 24)); // NOI18N
-        jRadioButton1.setText("OFF");
+        ButtonGroup fanStatus = new ButtonGroup();
+        
+        
+        fanoff.setFont(new java.awt.Font("Tw Cen MT", 1, 24)); // NOI18N
+        fanoff.setText("OFF");
 
-        jRadioButton2.setFont(new java.awt.Font("Tw Cen MT", 1, 24)); // NOI18N
-        jRadioButton2.setText("ON");
+        fanon.setFont(new java.awt.Font("Tw Cen MT", 1, 24)); // NOI18N
+        fanon.setText("ON");
 
-        jSlider1.setMaximum(335);
-        jSlider1.setPaintLabels(true);
-        jSlider1.setPaintTicks(true);
-        jSlider1.setSnapToTicks(true);
-        jSlider1.setToolTipText("");
-        jSlider1.setValue(61);
+        fanStatus.add(fanoff);
+        fanStatus.add(fanon);
+        
+        fanSpeedSetter.setMaximum(335);
+        fanSpeedSetter.setPaintLabels(true);
+        fanSpeedSetter.setPaintTicks(true);
+        fanSpeedSetter.setSnapToTicks(true);
+        fanSpeedSetter.setToolTipText("");
+        fanSpeedSetter.setValue(61);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel5.setText("MODE");
 
-        jRadioButton3.setFont(new java.awt.Font("Meiryo UI", 1, 18)); // NOI18N
-        jRadioButton3.setText("AUTO");
+        ButtonGroup mode = new ButtonGroup();
+        
+        autoMode.setFont(new java.awt.Font("Meiryo UI", 1, 18)); // NOI18N
+        autoMode.setText("AUTO");
 
-        jRadioButton5.setFont(new java.awt.Font("Meiryo UI", 1, 18)); // NOI18N
-        jRadioButton5.setText("WINTER");
+        winterMode.setFont(new java.awt.Font("Meiryo UI", 1, 18)); // NOI18N
+        winterMode.setText("WINTER");
 
-        jRadioButton6.setFont(new java.awt.Font("Meiryo UI", 1, 18)); // NOI18N
-        jRadioButton6.setText("SUMMER");
+        summerMode.setFont(new java.awt.Font("Meiryo UI", 1, 18)); // NOI18N
+        summerMode.setText("SUMMER");
+        
+        mode.add(autoMode);
+        mode.add(winterMode);
+        mode.add(summerMode);
 
-        jTextField1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jTextField1.setText("23.5");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        temperature.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        temperature.setText("23.5");
+        temperature.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                temperatureActionPerformed(evt);
             }
         });
 
-        jTextField2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jTextField2.setText("30");
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        humidity.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        humidity.setText("30");
+        humidity.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                humidityActionPerformed(evt);
             }
         });
 
-        jTextField3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jTextField3.setText("212");
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        airQuality.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        airQuality.setText("212");
+        airQuality.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                airQualityActionPerformed(evt);
             }
         });
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jButton1.setText("SUBMIT");
+        submit.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        submit.setText("SUBMIT");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -127,7 +141,7 @@ public class HvacController extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(107, Short.MAX_VALUE)
-                .addComponent(jRadioButton1)
+                .addComponent(fanoff)
                 .addGap(907, 907, 907))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(28, 28, 28)
@@ -135,14 +149,14 @@ public class HvacController extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jRadioButton3)
+                                .addComponent(autoMode)
                                 .addGap(78, 78, 78)
-                                .addComponent(jRadioButton6)
+                                .addComponent(summerMode)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jRadioButton5)
+                                .addComponent(winterMode)
                                 .addGap(107, 107, 107))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton1)
+                                .addComponent(submit)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 383, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(75, 75, 75))
@@ -151,23 +165,23 @@ public class HvacController extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(airQuality, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(humidity, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(temperature, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(312, 312, 312))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel4)
                                 .addGap(135, 135, 135)
-                                .addComponent(jRadioButton2))
-                            .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, 431, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(fanon))
+                            .addComponent(fanSpeedSetter, javax.swing.GroupLayout.PREFERRED_SIZE, 431, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel5))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
@@ -177,22 +191,22 @@ public class HvacController extends javax.swing.JFrame {
                 .addGap(37, 37, 37)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(temperature, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(34, 34, 34)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(humidity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(36, 36, 36)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(airQuality, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(37, 37, 37)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jRadioButton1)
-                    .addComponent(jRadioButton2))
+                    .addComponent(fanoff)
+                    .addComponent(fanon))
                 .addGap(18, 18, 18)
-                .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(fanSpeedSetter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(37, 37, 37)
                 .addComponent(jLabel5)
                 .addGap(18, 18, 18)
@@ -202,11 +216,11 @@ public class HvacController extends javax.swing.JFrame {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jRadioButton3)
-                            .addComponent(jRadioButton6)
-                            .addComponent(jRadioButton5))
+                            .addComponent(autoMode)
+                            .addComponent(summerMode)
+                            .addComponent(winterMode))
                         .addGap(27, 27, 27)
-                        .addComponent(jButton1)
+                        .addComponent(submit)
                         .addGap(0, 19, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -231,17 +245,17 @@ public class HvacController extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    public void temperatureActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_temperatureActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_temperatureActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    public void humidityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_humidityActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_humidityActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    public void airQualityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_airQualityActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_airQualityActionPerformed
 
     /**
      * @param args the command line arguments
@@ -279,23 +293,23 @@ public class HvacController extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
+    public javax.swing.JButton submit;
+    public javax.swing.JLabel jLabel1;
+    public javax.swing.JLabel jLabel2;
+    public javax.swing.JLabel jLabel3;
+    public javax.swing.JLabel jLabel4;
+    public javax.swing.JLabel jLabel5;
     public javax.swing.JPanel jPanel1;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton5;
-    private javax.swing.JRadioButton jRadioButton6;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JSlider jSlider1;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
+    public javax.swing.JRadioButton fanoff;
+    public javax.swing.JRadioButton fanon;
+    public javax.swing.JRadioButton autoMode;
+    public javax.swing.JRadioButton winterMode;
+    public javax.swing.JRadioButton summerMode;
+    public javax.swing.JScrollPane jScrollPane1;
+    public javax.swing.JSlider fanSpeedSetter;
+    public javax.swing.JTextArea jTextArea1;
+    public javax.swing.JTextField temperature;
+    public javax.swing.JTextField humidity;
+    public javax.swing.JTextField airQuality;
     // End of variables declaration//GEN-END:variables
 }

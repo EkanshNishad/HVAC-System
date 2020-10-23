@@ -1,7 +1,9 @@
 
 public interface AC {
-	boolean turnACOn();
-	boolean turnACOff();
+	void turnACOn();
+	void turnACOff();
+	void turnCompressorOn();
+	void turnCompressorOff();
 	void setACTemp(double temp);
 	void increaseACTemp(double temp);
 	void decreaseACTemp(double temp);
