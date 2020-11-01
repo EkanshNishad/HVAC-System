@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-import java.applet.*;
+
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -12,23 +12,24 @@ import javax.swing.event.ChangeListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.Timer;
 /**
  *
  * @author DELL
  */
-public class Hvac extends Applet implements Heater, AC, Fan, HumidityController{
+public class Hvac implements Heater, AC, Fan, HumidityController, Ventilation{
 
     /**
      * Initialization method that will be called after the applet is loaded into
      * the browser.
      */
-	boolean startNavigation;
+	boolean startNavigation = false;
 	
 	double temp;
 	double humid;
-	double aqi;
+	int aqi;
 	boolean fanStatus;
 	int fanSpeed;
 	String mode;
@@ -43,6 +44,10 @@ public class Hvac extends Applet implements Heater, AC, Fan, HumidityController{
 	
 	boolean humditiyController;
 
+	boolean ventilator;
+	boolean exhaustStatus;
+	int exhaustSpeed;
+	
 	
 	
     public void init() {
@@ -63,14 +68,81 @@ public class Hvac extends Applet implements Heater, AC, Fan, HumidityController{
     	Hvac hvac = new Hvac();
     	hvac.startNavigation = false;
     	
+        ImageIcon img = new ImageIcon("res/Campus.png");
+        
+        JLabel thumb = new JLabel();
+        thumb.setIcon(img);
+    	Calendar calendar = Calendar.getInstance();
+    	String[] days = new String[] { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+    	String[] months = new String[] { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+    	SimpleDateFormat formatter = new SimpleDateFormat("hh:mm:ss");
+    	Date date = new Date();
+    	hcontrol.jTextArea1.setText(days[calendar.get(Calendar.DAY_OF_WEEK) - 1] + ", " + calendar.get(Calendar.DATE) + " " + 
+    	months[calendar.get(Calendar.MONTH) - 1] +" " + calendar.get(Calendar.YEAR) + "\n" + formatter.format(date));
+    	
+    	hcontrol.getInput.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				
+				String tempMode;
+				double temptemp, temphumid;
+				int tempaqi;
+				if(hcontrol.autoMode.isSelected())
+					tempMode = hcontrol.autoMode.getText();
+				else if(hcontrol.summerMode.isSelected())
+					tempMode = hcontrol.summerMode.getText();
+				else
+					tempMode = hcontrol.winterMode.getText();
+				
+				if(tempMode == "AUTO")
+				{
+					Random rand = new Random();
+					temptemp = rand.nextDouble()*98 - 49;
+					temphumid = rand.nextDouble()*90 + 5;
+					tempaqi = rand.nextInt(495);
+				}
+				else if(tempMode == "WINTER")
+				{
+					Random rand = new Random();
+					temptemp = rand.nextDouble()*40 - 20;
+					temphumid = rand.nextDouble()*70 + 25;
+					
+					tempaqi = rand.nextInt(495);
+				
+				}
+				else {
+					Random rand = new Random();
+					temptemp = rand.nextDouble()*27 + 22;
+					temphumid = rand.nextDouble()*45 + 5;
+					tempaqi = rand.nextInt(495);
+				
+				}
+				
+				temptemp = ((double)Math.round(temptemp * 100))/100;
+				temphumid = ((double)Math.round(temphumid * 100))/100;
+				
+				hcontrol.temperature.setText(Double.toString(temptemp));
+				hcontrol.humidity.setText(Double.toString(temphumid));
+				hcontrol.airQuality.setText(Integer.toString(tempaqi));
+				
+			}
+    		
+    	});
+    	
+
+    	
+    	
     	hcontrol.submit.addActionListener(new ActionListener() {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				
+				
+				
 				hvac.temp = Double.parseDouble(hcontrol.temperature.getText());
 				hvac.humid = Double.parseDouble(hcontrol.humidity.getText());
-				hvac.aqi = Double.parseDouble(hcontrol.airQuality.getText());
+				hvac.aqi = Integer.parseInt(hcontrol.airQuality.getText());
 				if(hcontrol.fanon.isSelected())
 				{
 					hvac.turnFanOn();
@@ -85,9 +157,284 @@ public class Hvac extends Applet implements Heater, AC, Fan, HumidityController{
 					hvac.mode = hcontrol.summerMode.getText();
 				else
 					hvac.mode = hcontrol.winterMode.getText();
+				if(hvac.temp > 55 || hvac.temp < -50)
+				{
+					String message = "Temperature should be between -50 to 50 C.";
+					JOptionPane.showMessageDialog(new JFrame(), message, "Error", JOptionPane.ERROR_MESSAGE);
+					
+				}
+				else if(hvac.humid < 0 || hvac.humid > 100)
+				{
+					String message = "Humidity should be between 0 to 100 %.";
+					JOptionPane.showMessageDialog(new JFrame(), message, "Error", JOptionPane.ERROR_MESSAGE);
+					
+				}
+				else if(hvac.aqi < 0 || hvac.aqi > 500)
+				{
+					String message = "AQI level should be between 0 to 500.";
+					JOptionPane.showMessageDialog(new JFrame(), message, "Error", JOptionPane.ERROR_MESSAGE);
+					
+					
+				}
+				else
+				{
+					hvac.startNavigation = true;
 				
 				
+					hvac.turnACOn();
+                    hvac.turnHumidityControlOn();
+                    hnav.currentFanSpeed.setText(Integer.toString(hvac.fanSpeed));
+		    	
+                    if(hvac.mode == "AUTO") {
+		    		
+                    	hvac.acFan = true;
+                    	if(hvac.temp > 29)
+                    	{
+                    		hvac.turnHeaterOff();
+                    		hvac.setACTemp(24);
+                    		hnav.currentACTemp.setText("24 C");
+                    		hvac.turnCompressorOn();
+                    	}
+                    	else if(hvac.temp < 21)
+                    	{
+                    		hvac.turnACOff();
+                    		hvac.turnCompressorOff();
+                    		hvac.turnHeaterOn();
+                    		hvac.setHeaterTemp(24);
+		    			
+                    	}
+                    }
+                    else if(hvac.mode == "WINTER")
+                    {
+                    	hvac.turnACOff();
+                    	hnav.currentACTemp.setText(" ");
+                    	if(hvac.temp < 18)
+                    	{
+		    			
+                    		hvac.turnHeaterOn();
+                    		hvac.setHeaterTemp(22);
+                    	}
+                    }
+                    else
+                    {
+                    	hvac.turnHeaterOff();
+                    	hvac.acFan = true;
+                    	if(hvac.temp > 27)
+                    	{
+               
+                    		hvac.setACTemp(25);
+                    		hnav.currentACTemp.setText("25 C");
+                    		hvac.turnCompressorOn();
+                    	}
+                    }
+                        
+                        if(hvac.acStatus == true)
+                        {
+                            hnav.currentACStatus.setText("ON");
+                            if(hvac.acCompressor == true)
+                                hnav.currentACTemp.setText(Double.toString(hvac.acTemp) + " C");
+                            else
+                                hnav.currentACTemp.setText(" ");
+                        }
+                        else
+                        {
+                            hnav.currentACStatus.setText("OFF");
+                            hnav.currentACTemp.setText(" ");
+                        }
+                        
+                        if(hvac.heaterStatus == true)
+                        {
+                             hnav.currentHeaterStatus.setText("ON");
+                             hnav.currentHeaterTemp.setText(Double.toString(hvac.heaterTemp) + " C");
+                        }
+                        else
+                        {
+                            hnav.currentHeaterStatus.setText("OFF");
+                            hnav.currentHeaterTemp.setText(" ");
+                        }
+		    	
+                        
+				}		
 				
+				
+				Timer timer = new Timer();
+		    	TimerTask timerTask = new TimerTask() {
+
+					@Override
+					public void run() {
+						
+						
+						
+						
+						
+						if(hvac.mode == "AUTO")
+						{
+							
+							if(hvac.heaterStatus)
+							{
+								if(hvac.heaterTemp > hvac.temp)
+								{
+									hvac.temp = hvac.temp + 0.004761904;
+								}
+								else
+								{
+									hvac.turnHeaterOff();
+								}
+							}
+							
+							if(hvac.acStatus && hvac.acCompressor)
+							{
+								if(hvac.acTemp < hvac.temp)
+								{
+									 hvac.temp = hvac.temp - 0.0019444;
+								}
+								else
+									hvac.turnCompressorOff();
+							}
+							else
+					 			hnav.currentACTemp.setText(" ");
+							
+							if(hvac.startNavigation)
+							{
+								if(hvac.humid < 37.5)
+								{
+									hvac.increaseHumidity();
+								}
+								else if(hvac.humid > 56.25)
+								{
+									hvac.decreaseHumidity();
+								}
+							}
+							
+							
+						}
+						else if(hvac.mode == "WINTER")
+						{
+							
+				    		if(hvac.temp < 18)
+				    		{
+				    			if(hvac.heaterStatus)
+				    			{
+				    				if(hvac.heaterTemp > hvac.temp)
+				    				{
+				    					hvac.temp = hvac.temp + 0.004761904;
+				    				}
+				    			}
+				    			else
+				    			{
+				    				hvac.turnHeaterOn();
+				    				hvac.setHeaterTemp(20);
+				    			}
+				    		}
+				    		
+				    		if(hvac.startNavigation)
+				    		{
+				    			if(hvac.humid < 30)
+								{
+				    				hvac.increaseHumidity();
+								}
+								else if(hvac.humid > 40)
+								{
+									hvac.decreaseHumidity();
+								}
+				    		}
+						}
+						else
+						{
+							if(hvac.acStatus && hvac.acCompressor)
+							{
+								if(hvac.temp >= hvac.acTemp)
+								{
+									hvac.temp = hvac.temp - 0.0019444;
+								}
+							}
+							
+							if(hvac.startNavigation)
+							{
+								if(hvac.humid < 40)
+								{
+									hvac.increaseHumidity();
+								}
+								else if(hvac.humid > 60)
+								{
+									hvac.decreaseHumidity();
+								}
+							}
+						}
+						
+						hvac.turnExhaustOn();
+						hvac.setExhaustSpeed((int)((double)(hvac.aqi - 100)*2.88));
+						if(hvac.aqi <= 50)
+						{
+							hnav.aqiStatus.setText("Good air quality.");
+							hnav.aqiStatus.setBackground(Color.GREEN);
+							hnav.aqiStatus.setForeground(Color.WHITE);
+						}
+						else if(hvac.aqi <= 100)
+						{
+							hnav.aqiStatus.setText("Air Quality is acceptable.");
+							hnav.aqiStatus.setBackground(Color.YELLOW);
+							hnav.aqiStatus.setForeground(Color.BLACK);
+							
+							
+						}
+						else if(hvac.aqi <= 150)
+						{
+							hnav.aqiStatus.setText("Air Quality is unhealty for sensitive groups. Sensitive group must take necessary precautions.");
+							hnav.aqiStatus.setBackground(Color.ORANGE);
+							hnav.aqiStatus.setForeground(Color.WHITE);
+							
+						}
+						else if(hvac.aqi <= 200)
+						{
+							hnav.aqiStatus.setText("Air Quality is unhealthy for everyone. Faculties should ensure that no classes are being conducted.");
+							hnav.aqiStatus.setBackground(Color.RED);
+							hnav.aqiStatus.setForeground(Color.WHITE);
+						}
+						else if(hvac.aqi <= 300)
+						{
+							hnav.aqiStatus.setText("Health Alert!!! Dont enter the CC3 building if there isnt any need.");
+							hnav.aqiStatus.setBackground(new Color(172,95,227));
+							hnav.aqiStatus.setForeground(Color.WHITE);
+						}
+						else
+						{
+							hnav.aqiStatus.setText("Hazardous Air Quality. Evacuate the CC3 building as soon as possible");
+							hnav.aqiStatus.setBackground(new Color(135, 45, 45));
+							hnav.aqiStatus.setForeground(Color.WHITE);
+						}
+							
+						
+						
+							
+						hvac.openVentilator();
+						
+						
+						
+						hvac.temp = ((double)Math.round(hvac.temp * 100))/100;
+						hvac.humid = ((double)Math.round(hvac.humid * 100))/100;
+						
+						hnav.currentTemp.setText(Double.toString(hvac.temp) + " C");
+						hnav.currentHumidity.setText(Double.toString(hvac.humid));
+						hnav.currentFanSpeed.setText(Integer.toString(hvac.fanSpeed));
+						if(hvac.acStatus)
+							hnav.currentACTemp.setText(Double.toString(hvac.acTemp) + " C");
+						else
+							hnav.currentACTemp.setText(" ");
+						if(hvac.heaterStatus)
+							hnav.currentHeaterTemp.setText(Double.toString(hvac.heaterTemp) + " C");
+						else
+							hnav.currentHeaterTemp.setText(" ");
+						
+						hnav.currentExhaustSpeed.setText(Integer.toString(hvac.exhaustSpeed) + " rpm");
+						hnav.currentAqi.setText(Double.toString(hvac.aqi));
+						
+					}
+				
+		    		
+		    	};
+		    	
+		    	timer.scheduleAtFixedRate(timerTask, 0, 1000);
 			}
 			
     		    			
@@ -95,157 +442,7 @@ public class Hvac extends Applet implements Heater, AC, Fan, HumidityController{
     	
     	
     	
-    	hvac.turnACOn();
-    	hvac.turnHumidityControlOn();
-    	hnav.currentFanSpeed.setText(Integer.toString(hvac.fanSpeed));
-    	if(hvac.mode == "AUTO") {
-    		
-    		hvac.acFan = true;
-    		if(hvac.temp > 29)
-    		{
-    			hvac.turnHeaterOff();
-    			hvac.setACTemp(24);
-    			hnav.currentACTemp.setText("24 C");
-    			hvac.turnCompressorOn();
-    		}
-    		else if(hvac.temp < 21)
-    		{
-    			hvac.turnCompressorOff();
-    			if(hvac.temp < 19)
-    			{
-    				hvac.acFan = false;
-    				hvac.turnACOff();
-    				hvac.turnHeaterOn();
-    			}
-    			else
-    				hvac.turnHeaterOff();
-    		}
-    	}
-    	else if(hvac.mode == "Winter")
-    	{
-    		hvac.turnACOff();
-    		hnav.currentACTemp.setText(" ");
-    		if(hvac.temp < 18)
-    		{
-    			
-    			hvac.turnHeaterOn();
-    			hvac.setHeaterTemp(22);
-    		}
-    	}
-    	else
-    	{
-    		hvac.turnHeaterOff();
-    		hvac.acFan = true;
-    		if(hvac.temp > 27)
-    		{
-    			hvac.setACTemp(25);
-    			hnav.currentACTemp.setText("25 C");
-    			hvac.turnCompressorOn();
-    		}
-    	}
     	
-    	Timer timer = new Timer();
-    	TimerTask timerTask = new TimerTask() {
-
-			@Override
-			public void run() {
-				
-				
-				
-				
-				
-				if(hvac.mode == "AUTO")
-				{
-					if(hvac.heaterStatus)
-					{
-						if(hvac.heaterTemp > hvac.temp)
-						{
-							hvac.temp = hvac.temp + 0.004761904;
-						}
-						else
-						{
-							hvac.turnHeaterOff();
-						}
-					}
-					
-					if(hvac.acStatus)
-					{
-						if(hvac.acTemp < hvac.temp)
-						{
-							 hvac.temp = hvac.temp - 0.0019444;
-						}
-						else
-							hvac.turnCompressorOff();
-					}
-					
-					if(hvac.humid < 37.5)
-					{
-						hvac.increaseHumidity();
-					}
-					else if(hvac.humid > 56.25)
-					{
-						hvac.decreaseHumidity();
-					}
-				}
-				else if(hvac.mode == "WINTER")
-				{
-					
-		    		if(hvac.temp < 18)
-		    		{
-		    			if(hvac.heaterStatus)
-		    			{
-		    				if(hvac.heaterTemp > hvac.temp)
-		    				{
-		    					hvac.temp = hvac.temp + 0.004761904;
-		    				}
-		    			}
-		    			else
-		    			{
-		    				hvac.turnHeaterOn();
-		    				hvac.setHeaterTemp(20);
-		    			}
-		    		}
-		    		
-		    		
-		    		if(hvac.humid < 30)
-					{
-						hvac.increaseHumidity();
-					}
-					else if(hvac.humid > 40)
-					{
-						hvac.decreaseHumidity();
-					}
-				}
-				else
-				{
-					if(hvac.temp >= hvac.acTemp)
-					{
-						hvac.temp = hvac.temp - 0.0019444;
-					}
-					
-					if(hvac.humid < 40)
-					{
-						hvac.increaseHumidity();
-					}
-					else if(hvac.humid > 60)
-					{
-						hvac.decreaseHumidity();
-					}
-				}
-				
-				hnav.currentTemp.setText(Double.toString(hvac.temp) + " C");
-				hnav.currentHumidity.setText(Double.toString(hvac.humid));
-				hnav.currentFanSpeed.setText(Integer.toString(hvac.fanSpeed));
-				if(hvac.acStatus)
-					hnav.currentACTemp.setText(Double.toString(hvac.acTemp) + " C");
-				else
-					hnav.currentACTemp.setText(" ");
-			}
-    		
-    	};
-    	
-    	timer.scheduleAtFixedRate(timerTask, 0, 1000);
-    			
     	
     	
     	
@@ -407,6 +604,7 @@ public class Hvac extends Applet implements Heater, AC, Fan, HumidityController{
 	@Override
 	public void turnCompressorOff() {
 		this.acCompressor = false;
+		setACTemp(this.temp);
 		// TODO Auto-generated method stub
 		
 	}
@@ -441,6 +639,69 @@ public class Hvac extends Applet implements Heater, AC, Fan, HumidityController{
 	@Override
 	public void decreaseHumidity() {
 		this.humid = this.humid - 0.0438596;	
+	}
+
+
+
+
+	@Override
+	public void turnExhaustOn() {
+		// TODO Auto-generated method stub
+		this.exhaustStatus = true;
+	}
+
+
+
+
+	@Override
+	public void turnExhaustOff() {
+		// TODO Auto-generated method stub
+		this.exhaustStatus = false;
+	}
+
+
+
+
+	@Override
+	public void setExhaustSpeed(int speed) {
+		// TODO Auto-generated method stub
+		this.exhaustSpeed = speed;
+	}
+
+
+
+
+	@Override
+	public void increaseExhaustSpeed() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+
+	@Override
+	public void decreaseExhaustSpeed() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+
+	@Override
+	public void openVentilator() {
+		// TODO Auto-generated method stub
+		this.ventilator = true;
+	}
+
+
+
+
+	@Override
+	public void closeVentilator() {
+		// TODO Auto-generated method stub
+		this.ventilator = false;
 	}
 
 
