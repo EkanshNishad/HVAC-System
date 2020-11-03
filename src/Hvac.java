@@ -172,7 +172,7 @@ public class Hvac implements Heater, AC, Fan, HumidityController, Ventilation{
 					hvac.mode = hcontrol.winterMode.getText();
 				if(hvac.temp > 55 || hvac.temp < -50)
 				{
-					String message = "Temperature should be between -50 to 50 C.";
+					String message = "Temperature should be between -50 to 55 C.";
 					JOptionPane.showMessageDialog(new JFrame(), message, "Error", JOptionPane.ERROR_MESSAGE);
 					
 				}
