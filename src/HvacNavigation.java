@@ -51,8 +51,9 @@ public class HvacNavigation extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     public void initComponents() {
+
     	try {
-    		jPanel1 = new ImagePanel(new ImageIcon("cc3.png").getImage());
+    		jPanel1 = new ImagePanel(new ImageIcon("navigation.png").getImage());
     		
     	}
     	catch(Exception e)
@@ -86,27 +87,27 @@ public class HvacNavigation extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel1.setText("AC temperature");
         jLabel1.setOpaque(true);
 
-        jLabel2.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel2.setText("Exhaust Speed");
         jLabel2.setOpaque(true);
 
-        jLabel3.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel3.setText("Fan Speed");
         jLabel3.setOpaque(true);
 
-        jLabel4.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel4.setText("Current temperature");
         jLabel4.setOpaque(true);
 
-        jLabel5.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel5.setText("Air quality Index");
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel5.setText("Air quality Index(in ppm)");
         jLabel5.setOpaque(true);
 
-        jLabel6.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel6.setText("Humidity(in %)");
         jLabel6.setOpaque(true);
 
@@ -130,43 +131,44 @@ public class HvacNavigation extends javax.swing.JFrame {
         });
 
         currentTemp.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        currentTemp.setText("");
+        currentTemp.setText("25  C");
 
         currentAqi.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        currentAqi.setText("");
+        currentAqi.setText("312 ppm");
 
         currentHumidity.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        currentHumidity.setText("");
+        currentHumidity.setText(" 30 %");
 
-        jLabel7.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel7.setText("AC Status");
         jLabel7.setOpaque(true);
 
         currentACStatus.setEditable(false);
         currentACStatus.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        currentACStatus.setText("");
+        currentACStatus.setText("ON");
 
         jSeparator3.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
-        jLabel8.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel8.setText("Heater Status");
         jLabel8.setOpaque(true);
 
-        jLabel9.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel9.setText("Heater Temperature");
         jLabel9.setOpaque(true);
-        
 
         currentHeaterStatus.setEditable(false);
         currentHeaterStatus.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        currentHeaterStatus.setText("");
+        currentHeaterStatus.setText("ON");
 
         currentHeaterTemp.setEditable(false);
         currentHeaterTemp.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
 
-        aqiStatus.setFont(new java.awt.Font("Roboto", 1, 24)); // NOI18N
+        aqiStatus.setBackground(new java.awt.Color(0, 128, 0));
+        aqiStatus.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        aqiStatus.setForeground(new java.awt.Color(255, 255, 255));
         aqiStatus.setName(""); // NOI18N
-        aqiStatus.setText("");
+        aqiStatus.setText("Good air qualtiy");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -176,7 +178,7 @@ public class HvacNavigation extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(30, 30, 30)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(aqiStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 250, Short.MAX_VALUE)
+                    .addComponent(aqiStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 848, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel4)
@@ -184,13 +186,13 @@ public class HvacNavigation extends javax.swing.JFrame {
                             .addComponent(jLabel6))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(220, 220, 800)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(currentAqi, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+                                    .addComponent(currentHumidity)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addGap(222, 222, 222)
-                                .addComponent(currentTemp, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(220, 220, 220)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(currentHumidity, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(currentAqi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                .addComponent(currentTemp, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(39, 39, 39)
@@ -225,7 +227,7 @@ public class HvacNavigation extends javax.swing.JFrame {
                         .addComponent(jLabel1)
                         .addGap(122, 122, 122)
                         .addComponent(currentACTemp, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(42, 42, 420))
+                .addGap(42, 42, 42))
             .addComponent(jSeparator2, javax.swing.GroupLayout.Alignment.TRAILING)
         );
         jPanel1Layout.setVerticalGroup(
@@ -275,7 +277,7 @@ public class HvacNavigation extends javax.swing.JFrame {
                     .addComponent(currentAqi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(aqiStatus, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(200, 500, 2700))
+                .addGap(27, 200, 800))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -361,7 +363,7 @@ public class HvacNavigation extends javax.swing.JFrame {
     public javax.swing.JLabel jLabel7;
     public javax.swing.JLabel jLabel8;
     public javax.swing.JLabel jLabel9;
-    public javax.swing.JPanel jPanel1;
+    public ImagePanel jPanel1;
     public javax.swing.JSeparator jSeparator1;
     public javax.swing.JSeparator jSeparator2;
     public javax.swing.JSeparator jSeparator3;

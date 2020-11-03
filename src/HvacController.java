@@ -118,6 +118,9 @@ public class HvacController extends javax.swing.JFrame {
         fanon.setFont(new java.awt.Font("Tw Cen MT", 1, 24)); // NOI18N
         fanon.setText("ON");
         fanon.setOpaque(true);
+        ButtonGroup btn = new ButtonGroup();
+        btn.add(fanoff);
+        btn.add(fanon);
         
         fanSpeedSetter.setMaximum(335);
         fanSpeedSetter.setPaintLabels(true);
@@ -146,6 +149,11 @@ public class HvacController extends javax.swing.JFrame {
         summerMode.setOpaque(true);
         summerMode.setBackground(new Color(240,240,240));
 
+        ButtonGroup btngrp = new ButtonGroup();
+        btngrp.add(autoMode);
+        btngrp.add(winterMode);
+        btngrp.add(summerMode);
+        
         temperature.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         temperature.setText("23.5");
         temperature.addActionListener(new java.awt.event.ActionListener() {
@@ -362,5 +370,6 @@ public class HvacController extends javax.swing.JFrame {
     public javax.swing.JButton submit;
     public javax.swing.JTextField temperature;
     public javax.swing.JRadioButton winterMode;
+   
     // End of variables declaration//GEN-END:variables
 }
