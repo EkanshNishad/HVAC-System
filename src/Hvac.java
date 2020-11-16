@@ -12,9 +12,13 @@ import javax.swing.event.ChangeListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.Timer;
+import java.util.logging.FileHandler;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 /**
  *
  * @author DELL
@@ -50,6 +54,8 @@ public class Hvac implements Heater, AC, Fan, HumidityController, Ventilation{
 	boolean exhaustStatus;
 	int exhaustSpeed;
 	
+	String recipent;
+	
 	
 	
     public void init() {
@@ -75,6 +81,21 @@ public class Hvac implements Heater, AC, Fan, HumidityController, Ventilation{
     	
         ImageIcon img = new ImageIcon("res/Campus.png");
         
+        Logger logger = Logger.getLogger(Hvac.class.getName());
+        FileHandler logFile;
+        try {
+        	logFile = new FileHandler("HVACSystem.log", true);
+        	logger.addHandler(logFile);
+        	SimpleFormatter formatter = new SimpleFormatter();	
+			logFile.setFormatter(formatter);
+        	logger.info("Starting HVAC System");
+        }
+        catch(Exception e)
+        {
+        	e.printStackTrace();
+        }
+        
+        
         JLabel thumb = new JLabel();
         thumb.setIcon(img);
     	Calendar calendar = Calendar.getInstance();
@@ -85,6 +106,159 @@ public class Hvac implements Heater, AC, Fan, HumidityController, Ventilation{
     	hcontrol.jTextArea1.setText(days[calendar.get(Calendar.DAY_OF_WEEK) - 1] + ", " + calendar.get(Calendar.DATE) + " " + 
     	months[calendar.get(Calendar.MONTH) - 1] +" " + calendar.get(Calendar.YEAR) + "\n" + formatter.format(date));
 
+    	/*Action Listener for generating input which is generated randomly
+    	 * for this action listener any mode should be selected otherwise this 
+    	 * action listener would generate error message*/
+    	hvac.recipent = "ekanshnishad@gmail.com";
+    	
+    	hcontrol.fanSpeedSetter.setMajorTickSpacing(50);
+    	hcontrol.fanSpeedSetter.setMinorTickSpacing(10);
+    	
+    	
+    	Timer dateTime = new Timer();
+    	TimerTask task2 = new TimerTask() {
+
+			@Override
+			public void run() {
+				Date dateobj = new Date();
+				hcontrol.jTextArea1.setText(days[calendar.get(Calendar.DAY_OF_WEEK) - 1] + ", " + calendar.get(Calendar.DATE) + " " + 
+				    	months[calendar.get(Calendar.MONTH) - 1] +" " + calendar.get(Calendar.YEAR) + "\n" + formatter.format(dateobj));
+				
+			}
+    		
+    	};
+    	
+    	dateTime.scheduleAtFixedRate(task2, 0, 1000);
+    	
+    	
+    	hcontrol.settings.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				Settings settings = new Settings();
+				settings.setVisible(true);
+				
+				settings.customAdmin.addActionListener(new ActionListener() {
+
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						// TODO Auto-generated method stub
+						settings.customAddress.setEditable(true);
+						
+					}
+					
+				});
+				
+				settings.saveSettings.addActionListener(new ActionListener() {
+
+					@Override
+					public void actionPerformed(ActionEvent arg0) {
+						// TODO Auto-generated method stub
+						if(settings.customAdmin.isSelected())
+						{
+							hvac.recipent = settings.customAddress.getText();
+						}
+						else {
+							hvac.recipent = "ekanshnishad@gmail.com";
+						}
+						
+						settings.dispose();
+					}
+					
+				});
+				
+				settings.cancelSettings.addActionListener(new ActionListener() {
+
+					@Override
+					public void actionPerformed(ActionEvent arg0) {
+						// TODO Auto-generated method stub
+						
+						settings.dispose();
+					}
+					
+				});
+				
+				settings.viewRecords.addActionListener(new ActionListener() {
+
+					@Override
+					public void actionPerformed(ActionEvent arg0) {
+						// TODO Auto-generated method stub
+						try{
+
+					        if ((new File("HVACSystem.log")).exists()) {
+
+					            Process p = Runtime.getRuntime().exec("rundll32 url.dll,FileProtocolHandler HVACSystem.log");
+					            p.waitFor();
+
+					        } else {
+
+					            logger.severe("File does not exist");
+
+					        }
+
+					      } catch (Exception ex) {
+					    	  logger.severe("Error opening file");
+					        ex.printStackTrace();
+					      }
+					}
+					
+				});
+		
+			}
+    		
+    	});
+    	
+    	
+    	hcontrol.autoMode.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				hvac.mode = "AUTO";
+				hcontrol.autoMode.setSelected(true);
+				hcontrol.winterMode.setSelected(false);
+				hcontrol.summerMode.setSelected(false);
+				hcontrol.winterMode.setOpaque(false);
+				hcontrol.summerMode.setOpaque(false);
+				hcontrol.autoMode.setOpaque(true);
+			}
+    		
+    	});
+    	
+    	hcontrol.winterMode.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				hvac.mode = "WINTER";
+				hcontrol.autoMode.setSelected(false);
+				hcontrol.winterMode.setSelected(true);
+				hcontrol.summerMode.setSelected(false);
+				hcontrol.winterMode.setOpaque(true);
+				hcontrol.summerMode.setOpaque(false);
+				hcontrol.autoMode.setOpaque(false);
+			}
+    		
+    	});
+    	
+    	hcontrol.summerMode.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				hvac.mode = "SUMMER";
+				hcontrol.autoMode.setSelected(false);
+				hcontrol.winterMode.setSelected(false);
+				hcontrol.summerMode.setSelected(true);
+				hcontrol.winterMode.setOpaque(false);
+				hcontrol.summerMode.setOpaque(true);
+				hcontrol.autoMode.setOpaque(false);
+			}
+    		
+    	});
+    	
+    	
     	hcontrol.getInput.addActionListener(new ActionListener() {
 
 			@Override
@@ -92,25 +266,21 @@ public class Hvac implements Heater, AC, Fan, HumidityController, Ventilation{
 				
 				if(hcontrol.autoMode.isSelected() || hcontrol.winterMode.isSelected() || hcontrol.summerMode.isSelected())
 				{
+					logger.info("Get input from the sensors");
 					String tempMode;
-				
+
 					double temptemp, temphumid;
 					int tempaqi;
-					if(hcontrol.autoMode.isSelected())
-						tempMode = hcontrol.autoMode.getText();
-					else if(hcontrol.summerMode.isSelected())
-						tempMode = hcontrol.summerMode.getText();
-					else
-						tempMode = hcontrol.winterMode.getText();
 					
-					if(tempMode == "AUTO")
+					
+					if(hvac.mode == "AUTO")
 					{
 						Random rand = new Random();
 						temptemp = rand.nextDouble()*98 - 49;
 						temphumid = rand.nextDouble()*90 + 5;
 						tempaqi = rand.nextInt(495);
 					}
-					else if(tempMode == "WINTER")
+					else if(hvac.mode == "WINTER")
 					{
 						Random rand = new Random();
 						temptemp = rand.nextDouble()*40 - 20;
@@ -145,21 +315,25 @@ public class Hvac implements Heater, AC, Fan, HumidityController, Ventilation{
     	
 
     	
-    	
+    	/*We have made an action listener for the submit button here
+    	 * This action listener would get all the values which we have set in the hvac
+    	 * navigation screen. All the attributes of the HVAC class are set in this submit button.*/
     	hcontrol.submit.addActionListener(new ActionListener() {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				
 				
-				
+				logger.info("Submitting all the data to HVAC class");
 				hvac.temp = Double.parseDouble(hcontrol.temperature.getText());
 				hvac.humid = Double.parseDouble(hcontrol.humidity.getText());
 				hvac.aqi = Integer.parseInt(hcontrol.airQuality.getText());
 				if(hcontrol.fanon.isSelected())
 				{
 					hvac.turnFanOn();
+					logger.config("Turn Fan ON.");
 					hvac.setSpeed( hcontrol.fanSpeedSetter.getValue() );
+					logger.config("Setting Fan Speed to" + Integer.toString(hvac.fanSpeed));
 				}
 				else
 					hvac.turnFanOff();
@@ -170,51 +344,64 @@ public class Hvac implements Heater, AC, Fan, HumidityController, Ventilation{
 					hvac.mode = hcontrol.summerMode.getText();
 				else
 					hvac.mode = hcontrol.winterMode.getText();
+				
+				
+				/*Error message will be shown if the inputs are not in the particular range.*/
 				if(hvac.temp > 55 || hvac.temp < -50)
 				{
 					String message = "Temperature should be between -50 to 55 C.";
 					JOptionPane.showMessageDialog(new JFrame(), message, "Error", JOptionPane.ERROR_MESSAGE);
+					logger.warning(message);
 					
 				}
 				else if(hvac.humid < 0 || hvac.humid > 100)
 				{
 					String message = "Humidity should be between 0 to 100 %.";
 					JOptionPane.showMessageDialog(new JFrame(), message, "Error", JOptionPane.ERROR_MESSAGE);
+					logger.warning(message);
 					
 				}
 				else if(hvac.aqi < 0 || hvac.aqi > 500)
 				{
 					String message = "AQI level should be between 0 to 500.";
 					JOptionPane.showMessageDialog(new JFrame(), message, "Error", JOptionPane.ERROR_MESSAGE);
-					
+					logger.warning(message);
 					
 				}
 				else
 				{
+					/*all the calculations and configuration of our HVAC System would be set from
+					 * here. Also all the attributes in the HVAC Navigation class and gui would be
+					 * set here in this part of the code.
+					 */
 					hvac.startNavigation = true;
 				
 				
-					hvac.turnACOn();
-                    hvac.turnHumidityControlOn();
-                    hnav.currentFanSpeed.setText(Integer.toString(hvac.fanSpeed));
+                    hnav.currentFanSpeed.setText(Integer.toString(hvac.fanSpeed) + "rpm");
 		    	
                     if(hvac.mode == "AUTO") {
 		    		
                     	hvac.acFan = true;
                     	if(hvac.temp > 29)
                     	{
+                    		hvac.turnACOn();
+                    		logger.config("Turning AC ON.");
                     		hvac.turnHeaterOff();
                     		hvac.setACTemp(24);
+                    		logger.config("Set AC temperature to 24 degree Celsius.");
                     		hnav.currentACTemp.setText("24 C");
                     		hvac.turnCompressorOn();
                     	}
                     	else if(hvac.temp < 21)
                     	{
+                    		
                     		hvac.turnACOff();
                     		hvac.turnCompressorOff();
                     		hvac.turnHeaterOn();
                     		hvac.setHeaterTemp(24);
 		    			
+                    		logger.config("Turning Heater ON.");
+                    		logger.config("Set heater temperature to 24 degree Celsius.");
                     	}
                     	else {
                     		hvac.turnACOff();
@@ -228,6 +415,7 @@ public class Hvac implements Heater, AC, Fan, HumidityController, Ventilation{
                     	{
 		    			
                     		hvac.turnHeaterOn();
+                    		logger.config("Turning Heater ON.");
                     		hvac.setHeaterTemp(22);
                     	}
                     }
@@ -237,8 +425,10 @@ public class Hvac implements Heater, AC, Fan, HumidityController, Ventilation{
                     	hvac.acFan = true;
                     	if(hvac.temp > 27)
                     	{
-               
+                    		hvac.turnACOn();
+                    		logger.config("Turning AC ON.");
                     		hvac.setACTemp(25);
+                    		logger.config("Set AC temperature to 25 degree Celsius.");
                     		hnav.currentACTemp.setText(Double.toString(hvac.acTemp));
                     		hvac.turnCompressorOn();
                     	}
@@ -246,7 +436,7 @@ public class Hvac implements Heater, AC, Fan, HumidityController, Ventilation{
                         
                         if(hvac.acStatus == true)
                         {
-                            hnav.currentACStatus.setText("ON");
+                            
                             if(hvac.acCompressor == true)
                                 hnav.currentACTemp.setText(Double.toString(hvac.acTemp) + " C");
                             else
@@ -254,28 +444,28 @@ public class Hvac implements Heater, AC, Fan, HumidityController, Ventilation{
                         }
                         else
                         {
-                            hnav.currentACStatus.setText("OFF");
-                            hnav.currentACTemp.setText(" ");
+                            hnav.currentACTemp.setText("OFF");
                         }
                         
                         if(hvac.heaterStatus == true)
                         {
-                             hnav.currentHeaterStatus.setText("ON");
                              hnav.currentHeaterTemp.setText(Double.toString(hvac.heaterTemp) + " C");
                         }
                         else
                         {
-                            hnav.currentHeaterStatus.setText("OFF");
-                            hnav.currentHeaterTemp.setText(" ");
+                            hnav.currentHeaterTemp.setText("OFF");
                         }
                         
+                        
+                        //setting the air quality level and proper warning message 
                         if(hvac.aqi <= 50)
 						{
 							hvac.setAqiWarning("Good air quality.");
 							hnav.aqiStatus.setText(hvac.aqiWarning);
 							hnav.aqiStatus.setBackground(Color.GREEN);
 							hnav.aqiStatus.setForeground(Color.WHITE);
-							System.out.println(hvac.aqiWarning);
+							
+							logger.finest("Good Air Quality");
 						}
 						else if(hvac.aqi <= 100)
 						{
@@ -283,7 +473,8 @@ public class Hvac implements Heater, AC, Fan, HumidityController, Ventilation{
 							hnav.aqiStatus.setText(hvac.aqiWarning);
 							hnav.aqiStatus.setBackground(Color.YELLOW);
 							hnav.aqiStatus.setForeground(Color.BLACK);
-							System.out.println(hvac.aqiWarning);
+							
+							logger.finer("Air Quality is acceptable.");
 							
 						}
 						else if(hvac.aqi <= 150)
@@ -293,7 +484,9 @@ public class Hvac implements Heater, AC, Fan, HumidityController, Ventilation{
 							hnav.aqiStatus.setText(hvac.aqiWarning);
 							hnav.aqiStatus.setBackground(Color.ORANGE);
 							hnav.aqiStatus.setForeground(Color.WHITE);
-							System.out.println(hvac.aqiWarning);
+							
+							logger.info("Air Quality is unhealty for sensitive groups. "
+									+ "Sensitive group must take necessary precautions.");
 							
 						}
 						else if(hvac.aqi <= 200)
@@ -303,7 +496,9 @@ public class Hvac implements Heater, AC, Fan, HumidityController, Ventilation{
 							hnav.aqiStatus.setText(hvac.aqiWarning);
 							hnav.aqiStatus.setBackground(Color.RED);
 							hnav.aqiStatus.setForeground(Color.WHITE);
-							System.out.println(hvac.aqiWarning);
+							
+							logger.warning("Air Quality is unhealthy for everyone."
+									+ " Faculties should ensure that no classes are being conducted.");
 						}
 						else if(hvac.aqi <= 300)
 						{
@@ -311,7 +506,8 @@ public class Hvac implements Heater, AC, Fan, HumidityController, Ventilation{
 							hnav.aqiStatus.setText(hvac.aqiWarning);
 							hnav.aqiStatus.setBackground(new Color(172,95,227));
 							hnav.aqiStatus.setForeground(Color.WHITE);
-							System.out.println(hvac.aqiWarning);
+							
+							logger.severe("Health Alert!!! Dont enter the CC3 building if there isnt any need.");
 						}
 						else
 						{
@@ -319,30 +515,34 @@ public class Hvac implements Heater, AC, Fan, HumidityController, Ventilation{
 							hnav.aqiStatus.setText(hvac.aqiWarning);
 							hnav.aqiStatus.setBackground(new Color(135, 45, 45));
 							hnav.aqiStatus.setForeground(Color.WHITE);
-							System.out.println(hvac.aqiWarning);
+							
+							logger.severe("Hazardous Air Quality. Evacuate the CC3 building as soon as possible");
 						}
                         
+                        
+                        if(hvac.aqi > 100)
+    						hvac.setExhaustSpeed((int)((double)(hvac.aqi - 100)*2.88) + 1440);
+                        else
+							hvac.setExhaustSpeed( 1440);
+                        
+                        logger.config("Turning Fan ON.");
+                        logger.config("Setting exhaust speed to " + Integer.toString(hvac.exhaustSpeed));
+                        
+                        
+                        //Timer to update the current temperature humidity and air quality index
                         Timer timer = new Timer();
         		    	TimerTask timerTask = new TimerTask() {
 
         					@Override
         					public void run() {
         						
-        						
-        						
-        						
-        						
         						if(hvac.mode == "AUTO")
         						{
-        							
         							if(hvac.heaterStatus)
         							{
-        								
         								if(hvac.temp < 21)
         								{
-        									
         									hvac.temp = hvac.temp + 0.004761904;
-        									
         								}
         								else
         								{
@@ -496,17 +696,29 @@ public class Hvac implements Heater, AC, Fan, HumidityController, Ventilation{
         							
         						hvac.openVentilator();
         					
-        						hnav.currentTemp.setText(Double.toString(hvac.temp) + " C");
-        						hnav.currentHumidity.setText(Double.toString(hvac.humid));
-        						hnav.currentFanSpeed.setText(Integer.toString(hvac.fanSpeed));
+        						
+        						
+        						
+        						//all the values and attributes of HvacNavigation class are being set
+        						
+        						double temptemp = hvac.temp*100;
+        						temptemp = (int)temptemp;
+        						temptemp = temptemp/100;
+        						
+        						double temphumid = hvac.humid*100;
+        						temphumid = (int)temphumid;
+        						temphumid = temphumid/100;
+        						hnav.currentTemp.setText(Double.toString(temptemp) + " °C");
+        						hnav.currentHumidity.setText(Double.toString(temphumid) + " %");
+        						hnav.currentFanSpeed.setText(Integer.toString(hvac.fanSpeed) + " rpm");
         						if(hvac.acStatus)
-        							hnav.currentACTemp.setText(Double.toString(hvac.acTemp) + " C");
+        							hnav.currentACTemp.setText(Double.toString(hvac.acTemp) + " °C");
         						else
-        							hnav.currentACTemp.setText(" ");
+        							hnav.currentACTemp.setText("OFF");
         						if(hvac.heaterStatus)
-        							hnav.currentHeaterTemp.setText(Double.toString(hvac.heaterTemp) + " C");
+        							hnav.currentHeaterTemp.setText(Double.toString(hvac.heaterTemp) + " °C");
         						else
-        							hnav.currentHeaterTemp.setText(" ");
+        							hnav.currentHeaterTemp.setText("OFF");
         						
         						hnav.currentExhaustSpeed.setText(Integer.toString(hvac.exhaustSpeed) + " rpm");
         						hnav.currentAqi.setText(Double.toString(hvac.aqi));
@@ -517,10 +729,14 @@ public class Hvac implements Heater, AC, Fan, HumidityController, Ventilation{
         		    		
         		    	};
         		    	
-        		    	
+        		    	//for sending email
         		    	try {
+        		    		logger.info("Preparing to send email.....");
 							SendEmail.sendEmail(hvac.acStatus, hvac.acTemp, hvac.heaterStatus, hvac.heaterTemp, hvac.exhaustSpeed, hvac.fanSpeed
-									, hvac.temp, hvac.humid, hvac.aqi, hvac.aqiWarning);
+									, hvac.temp, hvac.humid, hvac.aqi, hvac.aqiWarning,hvac.recipent);
+							
+							
+							logger.info("Message Sent Successfully!!!");
 						} catch (Exception e1) {
 							// TODO Auto-generated catch block
 							e1.printStackTrace();

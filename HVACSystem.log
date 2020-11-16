@@ -1,0 +1,54 @@
+Nov 16, 2020 4:28:06 PM Hvac main
+INFO: Starting HVAC System
+Nov 16, 2020 6:55:39 PM Hvac main
+INFO: Starting HVAC System
+Nov 16, 2020 7:44:20 PM Hvac main
+INFO: Starting HVAC System
+Nov 16, 2020 7:51:12 PM Hvac main
+INFO: Starting HVAC System
+Nov 16, 2020 7:51:49 PM Hvac main
+INFO: Starting HVAC System
+Nov 16, 2020 8:42:36 PM Hvac main
+INFO: Starting HVAC System
+Nov 16, 2020 8:43:29 PM Hvac main
+INFO: Starting HVAC System
+Nov 16, 2020 8:44:59 PM Hvac main
+INFO: Starting HVAC System
+Nov 16, 2020 8:45:22 PM Hvac main
+INFO: Starting HVAC System
+Nov 16, 2020 8:46:22 PM Hvac main
+INFO: Starting HVAC System
+Nov 16, 2020 8:46:49 PM Hvac main
+INFO: Starting HVAC System
+Nov 16, 2020 8:47:53 PM Hvac main
+INFO: Starting HVAC System
+Nov 16, 2020 8:53:45 PM Hvac main
+INFO: Starting HVAC System
+Nov 16, 2020 8:53:52 PM Hvac main
+INFO: Starting HVAC System
+Nov 16, 2020 8:55:52 PM Hvac main
+INFO: Starting HVAC System
+Nov 16, 2020 8:55:56 PM Hvac$6 actionPerformed
+INFO: Get input from the sensors
+Nov 16, 2020 8:56:02 PM Hvac$7 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 16, 2020 8:56:02 PM Hvac$7 actionPerformed
+SEVERE: Hazardous Air Quality. Evacuate the CC3 building as soon as possible
+Nov 16, 2020 8:56:02 PM Hvac$7 actionPerformed
+INFO: Preparing to send email.....
+Nov 16, 2020 8:56:11 PM Hvac$7 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 17, 2020 12:03:39 AM Hvac$6 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 12:07:19 AM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 12:07:25 AM Hvac$6 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 12:07:44 AM Hvac$7 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 17, 2020 12:07:44 AM Hvac$7 actionPerformed
+WARNING: Air Quality is unhealthy for everyone. Faculties should ensure that no classes are being conducted.
+Nov 17, 2020 12:07:44 AM Hvac$7 actionPerformed
+INFO: Preparing to send email.....
+Nov 17, 2020 12:07:52 AM Hvac$7 actionPerformed
+INFO: Message Sent Successfully!!!

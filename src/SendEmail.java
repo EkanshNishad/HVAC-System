@@ -7,10 +7,10 @@ import javax.mail.internet.MimeMessage;
 public class SendEmail {
 
 	public static void sendEmail(boolean acStatus, double acTemp, boolean heaterStatus, double heaterTemp, int exhaustSpeed, int fanSpeed,
-			double temp, double humid, int aqi, String aqiWarning) throws Exception {
+			double temp, double humid, int aqi, String aqiWarning, String reci) throws Exception {
 		// TODO Auto-generated method stub
 
-		System.out.println("Preparing to email");
+		
 		Properties properties = new Properties();
 		properties.put("mail.smtp.auth", "true");
 		properties.put("mail.smtp.starttls.enable", "true");
@@ -18,7 +18,7 @@ public class SendEmail {
 		properties.put("mail.smtp.port", "587");
 		
 		String account = "IIT2019182@iiita.ac.in";
-		String password = "xxxxxxxxxx";
+		String password = "dynamo@123";
 		
 		Session session = Session.getInstance(properties, new Authenticator() {
 			
@@ -31,12 +31,12 @@ public class SendEmail {
 		
 		});
 		
-		String recipent = "ekanshnishad@gmail.com";
+		String recipent = reci;
 		Message message = prepareMessage(session, account, recipent, acStatus, acTemp, heaterStatus, heaterTemp, exhaustSpeed, fanSpeed
 				, temp, humid, aqi, aqiWarning) ;
 				
 		Transport.send(message);
-		System.out.println("Message Sent Successfully!!");
+		
 	}
 
 	private static Message prepareMessage(Session session, String account, String recipent, boolean acStatus, double acTemp,

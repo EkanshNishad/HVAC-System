@@ -1,0 +1,2285 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-13T12:15:35</date>
+  <millis>1605249935943</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-13T12:15:40</date>
+  <millis>1605249940081</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$1</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-13T12:15:45</date>
+  <millis>1605249945124</millis>
+  <sequence>2</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Submitting all the data to HVAC class</message>
+</record>
+<record>
+  <date>2020-11-13T12:15:45</date>
+  <millis>1605249945133</millis>
+  <sequence>3</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Air Quality is unhealty for sensitive groups. Sensitive group must take necessary precautions.</message>
+</record>
+<record>
+  <date>2020-11-13T12:15:45</date>
+  <millis>1605249945140</millis>
+  <sequence>4</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Preparing to send email.....</message>
+</record>
+<record>
+  <date>2020-11-13T12:15:52</date>
+  <millis>1605249952981</millis>
+  <sequence>5</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Message Sent Successfully!!!</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-13T12:40:54</date>
+  <millis>1605251454342</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-13T12:41:01</date>
+  <millis>1605251461888</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$1</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Get input from the sensors</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-13T12:41:23</date>
+  <millis>1605251483511</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-13T12:41:35</date>
+  <millis>1605251495974</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$1</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-13T12:49:49</date>
+  <millis>1605251989550</millis>
+  <sequence>2</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Submitting all the data to HVAC class</message>
+</record>
+<record>
+  <date>2020-11-13T12:49:49</date>
+  <millis>1605251989562</millis>
+  <sequence>3</sequence>
+  <logger>Hvac</logger>
+  <level>SEVERE</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Hazardous Air Quality. Evacuate the CC3 building as soon as possible</message>
+</record>
+<record>
+  <date>2020-11-13T12:49:49</date>
+  <millis>1605251989570</millis>
+  <sequence>4</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Preparing to send email.....</message>
+</record>
+<record>
+  <date>2020-11-13T12:49:57</date>
+  <millis>1605251997438</millis>
+  <sequence>5</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Message Sent Successfully!!!</message>
+</record>
+<record>
+  <date>2020-11-13T12:50:14</date>
+  <millis>1605252014936</millis>
+  <sequence>6</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$1</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Get input from the sensors</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-13T12:54:32</date>
+  <millis>1605252272010</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-13T12:58:12</date>
+  <millis>1605252492351</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-13T12:58:15</date>
+  <millis>1605252495680</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$1</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-13T12:58:18</date>
+  <millis>1605252498828</millis>
+  <sequence>2</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Submitting all the data to HVAC class</message>
+</record>
+<record>
+  <date>2020-11-13T12:58:18</date>
+  <millis>1605252498839</millis>
+  <sequence>3</sequence>
+  <logger>Hvac</logger>
+  <level>SEVERE</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Hazardous Air Quality. Evacuate the CC3 building as soon as possible</message>
+</record>
+<record>
+  <date>2020-11-13T12:58:18</date>
+  <millis>1605252498846</millis>
+  <sequence>4</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Preparing to send email.....</message>
+</record>
+<record>
+  <date>2020-11-13T12:58:28</date>
+  <millis>1605252508964</millis>
+  <sequence>5</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Message Sent Successfully!!!</message>
+</record>
+<record>
+  <date>2020-11-13T13:11:44</date>
+  <millis>1605253304099</millis>
+  <sequence>6</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$1</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-13T13:11:46</date>
+  <millis>1605253306017</millis>
+  <sequence>7</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Submitting all the data to HVAC class</message>
+</record>
+<record>
+  <date>2020-11-13T13:11:46</date>
+  <millis>1605253306018</millis>
+  <sequence>8</sequence>
+  <logger>Hvac</logger>
+  <level>SEVERE</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Health Alert!!! Dont enter the CC3 building if there isnt any need.</message>
+</record>
+<record>
+  <date>2020-11-13T13:11:46</date>
+  <millis>1605253306018</millis>
+  <sequence>9</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Preparing to send email.....</message>
+</record>
+<record>
+  <date>2020-11-13T13:11:53</date>
+  <millis>1605253313600</millis>
+  <sequence>10</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Message Sent Successfully!!!</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-13T13:30:41</date>
+  <millis>1605254441740</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-13T13:47:29</date>
+  <millis>1605255449558</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-13T14:27:20</date>
+  <millis>1605257840452</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-13T14:27:52</date>
+  <millis>1605257872454</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$1</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-13T14:27:54</date>
+  <millis>1605257874699</millis>
+  <sequence>2</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Submitting all the data to HVAC class</message>
+</record>
+<record>
+  <date>2020-11-13T14:27:54</date>
+  <millis>1605257874710</millis>
+  <sequence>3</sequence>
+  <logger>Hvac</logger>
+  <level>SEVERE</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Hazardous Air Quality. Evacuate the CC3 building as soon as possible</message>
+</record>
+<record>
+  <date>2020-11-13T14:27:54</date>
+  <millis>1605257874716</millis>
+  <sequence>4</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Preparing to send email.....</message>
+</record>
+<record>
+  <date>2020-11-13T14:28:03</date>
+  <millis>1605257883282</millis>
+  <sequence>5</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Message Sent Successfully!!!</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-13T14:29:14</date>
+  <millis>1605257954922</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-13T14:29:21</date>
+  <millis>1605257961622</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$1</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-13T14:29:24</date>
+  <millis>1605257964271</millis>
+  <sequence>2</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Submitting all the data to HVAC class</message>
+</record>
+<record>
+  <date>2020-11-13T14:29:24</date>
+  <millis>1605257964284</millis>
+  <sequence>3</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Preparing to send email.....</message>
+</record>
+<record>
+  <date>2020-11-13T14:29:31</date>
+  <millis>1605257971701</millis>
+  <sequence>4</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Message Sent Successfully!!!</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-13T14:35:26</date>
+  <millis>1605258326021</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-13T14:38:10</date>
+  <millis>1605258490909</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$1</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-13T14:38:25</date>
+  <millis>1605258505768</millis>
+  <sequence>2</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Submitting all the data to HVAC class</message>
+</record>
+<record>
+  <date>2020-11-13T14:38:25</date>
+  <millis>1605258505778</millis>
+  <sequence>3</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Air Quality is unhealty for sensitive groups. Sensitive group must take necessary precautions.</message>
+</record>
+<record>
+  <date>2020-11-13T14:38:25</date>
+  <millis>1605258505784</millis>
+  <sequence>4</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Preparing to send email.....</message>
+</record>
+<record>
+  <date>2020-11-13T14:38:33</date>
+  <millis>1605258513521</millis>
+  <sequence>5</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Message Sent Successfully!!!</message>
+</record>
+<record>
+  <date>2020-11-13T14:40:37</date>
+  <millis>1605258637174</millis>
+  <sequence>6</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$1</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-13T14:40:39</date>
+  <millis>1605258639566</millis>
+  <sequence>7</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Submitting all the data to HVAC class</message>
+</record>
+<record>
+  <date>2020-11-13T14:40:39</date>
+  <millis>1605258639570</millis>
+  <sequence>8</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Air Quality is unhealty for sensitive groups. Sensitive group must take necessary precautions.</message>
+</record>
+<record>
+  <date>2020-11-13T14:40:39</date>
+  <millis>1605258639572</millis>
+  <sequence>9</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Preparing to send email.....</message>
+</record>
+<record>
+  <date>2020-11-13T14:40:44</date>
+  <millis>1605258644531</millis>
+  <sequence>10</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Message Sent Successfully!!!</message>
+</record>
+<record>
+  <date>2020-11-13T14:41:55</date>
+  <millis>1605258715118</millis>
+  <sequence>11</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Submitting all the data to HVAC class</message>
+</record>
+<record>
+  <date>2020-11-13T18:22:06</date>
+  <millis>1605271926496</millis>
+  <sequence>12</sequence>
+  <logger>Hvac</logger>
+  <level>WARNING</level>
+  <class>Hvac$2</class>
+  <method>actionPerformed</method>
+  <thread>16</thread>
+  <message>Humidity should be between 0 to 100 %.</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-15T21:49:26</date>
+  <millis>1605457166896</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-15T21:51:02</date>
+  <millis>1605457262534</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-15T21:52:46</date>
+  <millis>1605457366689</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-15T21:53:16</date>
+  <millis>1605457396757</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-15T22:04:33</date>
+  <millis>1605458073051</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T02:34:01</date>
+  <millis>1605474241565</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T02:36:11</date>
+  <millis>1605474371324</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T04:13:56</date>
+  <millis>1605480236644</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T04:16:36</date>
+  <millis>1605480396306</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T04:20:54</date>
+  <millis>1605480654175</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-16T04:20:58</date>
+  <millis>1605480658043</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$4</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T04:21:03</date>
+  <millis>1605480663654</millis>
+  <sequence>2</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Submitting all the data to HVAC class</message>
+</record>
+<record>
+  <date>2020-11-16T04:21:03</date>
+  <millis>1605480663656</millis>
+  <sequence>3</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Preparing to send email.....</message>
+</record>
+<record>
+  <date>2020-11-16T04:21:10</date>
+  <millis>1605480670425</millis>
+  <sequence>4</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Message Sent Successfully!!!</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T04:24:01</date>
+  <millis>1605480841655</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-16T04:24:09</date>
+  <millis>1605480849385</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$4</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T04:24:14</date>
+  <millis>1605480854652</millis>
+  <sequence>2</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Submitting all the data to HVAC class</message>
+</record>
+<record>
+  <date>2020-11-16T04:24:14</date>
+  <millis>1605480854653</millis>
+  <sequence>3</sequence>
+  <logger>Hvac</logger>
+  <level>SEVERE</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Health Alert!!! Dont enter the CC3 building if there isnt any need.</message>
+</record>
+<record>
+  <date>2020-11-16T04:24:14</date>
+  <millis>1605480854654</millis>
+  <sequence>4</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Preparing to send email.....</message>
+</record>
+<record>
+  <date>2020-11-16T04:24:20</date>
+  <millis>1605480860948</millis>
+  <sequence>5</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Message Sent Successfully!!!</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T04:25:59</date>
+  <millis>1605480959719</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-16T04:26:05</date>
+  <millis>1605480965593</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$4</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T04:26:07</date>
+  <millis>1605480967971</millis>
+  <sequence>2</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Submitting all the data to HVAC class</message>
+</record>
+<record>
+  <date>2020-11-16T04:26:07</date>
+  <millis>1605480967971</millis>
+  <sequence>3</sequence>
+  <logger>Hvac</logger>
+  <level>SEVERE</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Hazardous Air Quality. Evacuate the CC3 building as soon as possible</message>
+</record>
+<record>
+  <date>2020-11-16T04:26:07</date>
+  <millis>1605480967973</millis>
+  <sequence>4</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Preparing to send email.....</message>
+</record>
+<record>
+  <date>2020-11-16T04:26:14</date>
+  <millis>1605480974583</millis>
+  <sequence>5</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Message Sent Successfully!!!</message>
+</record>
+<record>
+  <date>2020-11-16T04:28:30</date>
+  <millis>1605481110208</millis>
+  <sequence>6</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$4</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T04:28:32</date>
+  <millis>1605481112934</millis>
+  <sequence>7</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Submitting all the data to HVAC class</message>
+</record>
+<record>
+  <date>2020-11-16T04:28:32</date>
+  <millis>1605481112935</millis>
+  <sequence>8</sequence>
+  <logger>Hvac</logger>
+  <level>SEVERE</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Health Alert!!! Dont enter the CC3 building if there isnt any need.</message>
+</record>
+<record>
+  <date>2020-11-16T04:28:32</date>
+  <millis>1605481112935</millis>
+  <sequence>9</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Preparing to send email.....</message>
+</record>
+<record>
+  <date>2020-11-16T04:28:38</date>
+  <millis>1605481118624</millis>
+  <sequence>10</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Message Sent Successfully!!!</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T04:31:05</date>
+  <millis>1605481265853</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-16T04:31:22</date>
+  <millis>1605481282901</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$4</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T04:31:31</date>
+  <millis>1605481291112</millis>
+  <sequence>2</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Submitting all the data to HVAC class</message>
+</record>
+<record>
+  <date>2020-11-16T04:31:31</date>
+  <millis>1605481291116</millis>
+  <sequence>3</sequence>
+  <logger>Hvac</logger>
+  <level>SEVERE</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Hazardous Air Quality. Evacuate the CC3 building as soon as possible</message>
+</record>
+<record>
+  <date>2020-11-16T04:31:31</date>
+  <millis>1605481291122</millis>
+  <sequence>4</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Preparing to send email.....</message>
+</record>
+<record>
+  <date>2020-11-16T04:31:38</date>
+  <millis>1605481298088</millis>
+  <sequence>5</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Message Sent Successfully!!!</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T04:32:52</date>
+  <millis>1605481372277</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-16T04:32:55</date>
+  <millis>1605481375895</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$4</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T04:33:01</date>
+  <millis>1605481381207</millis>
+  <sequence>2</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Submitting all the data to HVAC class</message>
+</record>
+<record>
+  <date>2020-11-16T04:33:01</date>
+  <millis>1605481381208</millis>
+  <sequence>3</sequence>
+  <logger>Hvac</logger>
+  <level>SEVERE</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Hazardous Air Quality. Evacuate the CC3 building as soon as possible</message>
+</record>
+<record>
+  <date>2020-11-16T04:33:01</date>
+  <millis>1605481381210</millis>
+  <sequence>4</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Preparing to send email.....</message>
+</record>
+<record>
+  <date>2020-11-16T04:33:07</date>
+  <millis>1605481387384</millis>
+  <sequence>5</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Message Sent Successfully!!!</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T10:20:55</date>
+  <millis>1605502255313</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T11:58:44</date>
+  <millis>1605508124501</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-16T11:58:55</date>
+  <millis>1605508135413</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T11:59:00</date>
+  <millis>1605508140135</millis>
+  <sequence>2</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Submitting all the data to HVAC class</message>
+</record>
+<record>
+  <date>2020-11-16T11:59:00</date>
+  <millis>1605508140141</millis>
+  <sequence>3</sequence>
+  <logger>Hvac</logger>
+  <level>SEVERE</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Hazardous Air Quality. Evacuate the CC3 building as soon as possible</message>
+</record>
+<record>
+  <date>2020-11-16T11:59:00</date>
+  <millis>1605508140149</millis>
+  <sequence>4</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Preparing to send email.....</message>
+</record>
+<record>
+  <date>2020-11-16T11:59:08</date>
+  <millis>1605508148904</millis>
+  <sequence>5</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Message Sent Successfully!!!</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T11:59:49</date>
+  <millis>1605508189394</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-16T11:59:53</date>
+  <millis>1605508193163</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T11:59:57</date>
+  <millis>1605508197479</millis>
+  <sequence>2</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Submitting all the data to HVAC class</message>
+</record>
+<record>
+  <date>2020-11-16T11:59:57</date>
+  <millis>1605508197486</millis>
+  <sequence>3</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Preparing to send email.....</message>
+</record>
+<record>
+  <date>2020-11-16T12:00:05</date>
+  <millis>1605508205785</millis>
+  <sequence>4</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Message Sent Successfully!!!</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T12:01:07</date>
+  <millis>1605508267615</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T12:02:15</date>
+  <millis>1605508335145</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T12:05:34</date>
+  <millis>1605508534239</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-16T12:05:55</date>
+  <millis>1605508555066</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T12:05:59</date>
+  <millis>1605508559808</millis>
+  <sequence>2</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Submitting all the data to HVAC class</message>
+</record>
+<record>
+  <date>2020-11-16T12:05:59</date>
+  <millis>1605508559815</millis>
+  <sequence>3</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Preparing to send email.....</message>
+</record>
+<record>
+  <date>2020-11-16T12:06:07</date>
+  <millis>1605508567865</millis>
+  <sequence>4</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Message Sent Successfully!!!</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T12:07:16</date>
+  <millis>1605508636792</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-16T12:07:39</date>
+  <millis>1605508659733</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$5</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T12:07:45</date>
+  <millis>1605508665018</millis>
+  <sequence>2</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Submitting all the data to HVAC class</message>
+</record>
+<record>
+  <date>2020-11-16T12:07:45</date>
+  <millis>1605508665024</millis>
+  <sequence>3</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Preparing to send email.....</message>
+</record>
+<record>
+  <date>2020-11-16T12:07:52</date>
+  <millis>1605508672339</millis>
+  <sequence>4</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Message Sent Successfully!!!</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T12:11:44</date>
+  <millis>1605508904210</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T12:14:56</date>
+  <millis>1605509096984</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T12:18:20</date>
+  <millis>1605509300309</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T12:20:26</date>
+  <millis>1605509426890</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T15:40:21</date>
+  <millis>1605521421283</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T15:50:17</date>
+  <millis>1605522017881</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-16T15:50:21</date>
+  <millis>1605522021811</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>SEVERE</level>
+  <class>Hvac$2$4</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Record not found</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T15:51:21</date>
+  <millis>1605522081847</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-16T15:51:31</date>
+  <millis>1605522091373</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:51:42</date>
+  <millis>1605522102790</millis>
+  <sequence>2</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$7</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Submitting all the data to HVAC class</message>
+</record>
+<record>
+  <date>2020-11-16T15:51:42</date>
+  <millis>1605522102796</millis>
+  <sequence>3</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$7</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Preparing to send email.....</message>
+</record>
+<record>
+  <date>2020-11-16T15:51:51</date>
+  <millis>1605522111793</millis>
+  <sequence>4</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$7</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Message Sent Successfully!!!</message>
+</record>
+<record>
+  <date>2020-11-16T15:51:56</date>
+  <millis>1605522116154</millis>
+  <sequence>5</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:51:57</date>
+  <millis>1605522117034</millis>
+  <sequence>6</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:51:57</date>
+  <millis>1605522117778</millis>
+  <sequence>7</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:51:58</date>
+  <millis>1605522118278</millis>
+  <sequence>8</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:52:00</date>
+  <millis>1605522120238</millis>
+  <sequence>9</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:52:01</date>
+  <millis>1605522121340</millis>
+  <sequence>10</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:52:02</date>
+  <millis>1605522122487</millis>
+  <sequence>11</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:52:03</date>
+  <millis>1605522123661</millis>
+  <sequence>12</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:52:04</date>
+  <millis>1605522124568</millis>
+  <sequence>13</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:52:47</date>
+  <millis>1605522167917</millis>
+  <sequence>14</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:52:48</date>
+  <millis>1605522168821</millis>
+  <sequence>15</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:52:49</date>
+  <millis>1605522169914</millis>
+  <sequence>16</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:52:50</date>
+  <millis>1605522170791</millis>
+  <sequence>17</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:52:58</date>
+  <millis>1605522178639</millis>
+  <sequence>18</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T15:54:01</date>
+  <millis>1605522241238</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-16T15:54:03</date>
+  <millis>1605522243886</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:54:06</date>
+  <millis>1605522246015</millis>
+  <sequence>2</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T15:55:14</date>
+  <millis>1605522314197</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-16T15:55:17</date>
+  <millis>1605522317397</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:55:18</date>
+  <millis>1605522318517</millis>
+  <sequence>2</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:55:19</date>
+  <millis>1605522319425</millis>
+  <sequence>3</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:55:20</date>
+  <millis>1605522320307</millis>
+  <sequence>4</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:55:21</date>
+  <millis>1605522321067</millis>
+  <sequence>5</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:55:21</date>
+  <millis>1605522321945</millis>
+  <sequence>6</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:55:22</date>
+  <millis>1605522322754</millis>
+  <sequence>7</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:55:23</date>
+  <millis>1605522323602</millis>
+  <sequence>8</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:55:26</date>
+  <millis>1605522326843</millis>
+  <sequence>9</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:55:27</date>
+  <millis>1605522327685</millis>
+  <sequence>10</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:55:28</date>
+  <millis>1605522328448</millis>
+  <sequence>11</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:55:30</date>
+  <millis>1605522330566</millis>
+  <sequence>12</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:55:31</date>
+  <millis>1605522331289</millis>
+  <sequence>13</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:55:32</date>
+  <millis>1605522332068</millis>
+  <sequence>14</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T15:56:43</date>
+  <millis>1605522403347</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-16T15:56:45</date>
+  <millis>1605522405748</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:56:46</date>
+  <millis>1605522406588</millis>
+  <sequence>2</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:56:47</date>
+  <millis>1605522407466</millis>
+  <sequence>3</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:56:48</date>
+  <millis>1605522408525</millis>
+  <sequence>4</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:56:51</date>
+  <millis>1605522411226</millis>
+  <sequence>5</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:56:52</date>
+  <millis>1605522412006</millis>
+  <sequence>6</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:56:52</date>
+  <millis>1605522412724</millis>
+  <sequence>7</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:56:54</date>
+  <millis>1605522414788</millis>
+  <sequence>8</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:56:55</date>
+  <millis>1605522415572</millis>
+  <sequence>9</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+<record>
+  <date>2020-11-16T15:56:56</date>
+  <millis>1605522416755</millis>
+  <sequence>10</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac$6</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Get input from the sensors</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T15:59:19</date>
+  <millis>1605522559879</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-16T15:59:23</date>
+  <millis>1605522563068</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>SEVERE</level>
+  <class>Hvac$2$4</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Record not found</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T16:00:26</date>
+  <millis>1605522626716</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T16:13:06</date>
+  <millis>1605523386802</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-16T16:13:09</date>
+  <millis>1605523389941</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>SEVERE</level>
+  <class>Hvac$2$4</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Error opening file</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T16:13:27</date>
+  <millis>1605523407777</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-16T16:13:31</date>
+  <millis>1605523411224</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>SEVERE</level>
+  <class>Hvac$2$4</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Error opening file</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T16:16:39</date>
+  <millis>1605523599531</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-16T16:16:42</date>
+  <millis>1605523602515</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>SEVERE</level>
+  <class>Hvac$2$4</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>Error opening file</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T16:19:32</date>
+  <millis>1605523772227</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-16T16:19:35</date>
+  <millis>1605523775519</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>SEVERE</level>
+  <class>Hvac$2$4</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>File does not exist</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T16:20:24</date>
+  <millis>1605523824499</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+<record>
+  <date>2020-11-16T16:20:27</date>
+  <millis>1605523827902</millis>
+  <sequence>1</sequence>
+  <logger>Hvac</logger>
+  <level>SEVERE</level>
+  <class>Hvac$2$4</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>File does not exist</message>
+</record>
+<record>
+  <date>2020-11-16T16:20:50</date>
+  <millis>1605523850884</millis>
+  <sequence>2</sequence>
+  <logger>Hvac</logger>
+  <level>SEVERE</level>
+  <class>Hvac$2$4</class>
+  <method>actionPerformed</method>
+  <thread>15</thread>
+  <message>File does not exist</message>
+</record>
+</log>
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-11-16T16:21:02</date>
+  <millis>1605523862960</millis>
+  <sequence>0</sequence>
+  <logger>Hvac</logger>
+  <level>INFO</level>
+  <class>Hvac</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting HVAC System</message>
+</record>
+</log>

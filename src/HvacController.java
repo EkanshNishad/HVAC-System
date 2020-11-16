@@ -52,14 +52,9 @@ public class HvacController extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     public void initComponents() {
 
-    	try {
-    		jPanel1 = new ImagePanel(new ImageIcon("Campus.png").getImage());
-    		
-    	}
-    	catch(Exception e)
-    	{
-    		e.printStackTrace();
-    	}
+        jPanel2 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -69,34 +64,38 @@ public class HvacController extends javax.swing.JFrame {
         fanoff = new javax.swing.JRadioButton();
         fanon = new javax.swing.JRadioButton();
         fanSpeedSetter = new javax.swing.JSlider();
-        jLabel5 = new javax.swing.JLabel();
-        autoMode = new javax.swing.JRadioButton();
-        winterMode = new javax.swing.JRadioButton();
-        summerMode = new javax.swing.JRadioButton();
         temperature = new javax.swing.JTextField();
         humidity = new javax.swing.JTextField();
         airQuality = new javax.swing.JTextField();
         submit = new javax.swing.JButton();
         getInput = new javax.swing.JButton();
+        settings = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        autoMode = new javax.swing.JButton();
+        summerMode = new javax.swing.JButton();
+        winterMode = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel2.setBackground(new java.awt.Color(0, 0, 0));
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("HVAC Controller");
+
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setPreferredSize(new java.awt.Dimension(1594, 1000));
 
-        jLabel1.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
+        jLabel1.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel1.setText("Temperature(in C)");
-        jLabel1.setOpaque(true);
-        jLabel1.setBackground(new Color(240,240,240));
 
-        jLabel2.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel2.setText("Air Quality Level");
-        jLabel2.setOpaque(true);
-        jLabel2.setBackground(new Color(240,240,240));
-        
-        jLabel3.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel3.setText("Humidity (in %)");
-        jLabel3.setOpaque(true);
-        jLabel3.setBackground(new Color(240,240,240));
 
         jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
         jTextArea1.setColumns(20);
@@ -106,22 +105,25 @@ public class HvacController extends javax.swing.JFrame {
         jTextArea1.setText("Wednesday, 21 October 2020\n12:00");
         jScrollPane1.setViewportView(jTextArea1);
 
-        jLabel4.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel4.setText("Fan");
-        jLabel4.setOpaque(true);
-        jLabel4.setBackground(new Color(240,240,240));
 
-        fanoff.setFont(new java.awt.Font("Tw Cen MT", 1, 24)); // NOI18N
+        fanoff.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         fanoff.setText("OFF");
-        fanoff.setOpaque(true);
+        fanoff.setBorderPainted(true);
+        fanoff.setOpaque(false);
 
-        fanon.setFont(new java.awt.Font("Tw Cen MT", 1, 24)); // NOI18N
+        fanon.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         fanon.setText("ON");
-        fanon.setOpaque(true);
-        ButtonGroup btn = new ButtonGroup();
-        btn.add(fanoff);
-        btn.add(fanon);
+        fanon.setBorderPainted(true);
+        fanon.setOpaque(false);
+
+        ButtonGroup grp = new ButtonGroup();
+        grp.add(fanoff);
+        grp.add(fanon);
         
+        
+        fanSpeedSetter.setBackground(new java.awt.Color(255, 255, 255));
         fanSpeedSetter.setMaximum(335);
         fanSpeedSetter.setPaintLabels(true);
         fanSpeedSetter.setPaintTicks(true);
@@ -129,31 +131,7 @@ public class HvacController extends javax.swing.JFrame {
         fanSpeedSetter.setToolTipText("");
         fanSpeedSetter.setValue(61);
 
-        jLabel5.setFont(new java.awt.Font("Open Sans", 0, 24)); // NOI18N
-        jLabel5.setText("MODE");
-        jLabel5.setOpaque(true);
-        jLabel5.setBackground(new Color(240,240,240));
-
-        autoMode.setFont(new java.awt.Font("Meiryo UI", 1, 18)); // NOI18N
-        autoMode.setText("AUTO");
-        autoMode.setOpaque(true);
-        autoMode.setBackground(new Color(240,240,240));
-
-        winterMode.setFont(new java.awt.Font("Meiryo UI", 1, 18)); // NOI18N
-        winterMode.setText("WINTER");
-        winterMode.setOpaque(true);
-        winterMode.setBackground(new Color(240,240,240));
-
-        summerMode.setFont(new java.awt.Font("Meiryo UI", 1, 18)); // NOI18N
-        summerMode.setText("SUMMER");
-        summerMode.setOpaque(true);
-        summerMode.setBackground(new Color(240,240,240));
-
-        ButtonGroup btngrp = new ButtonGroup();
-        btngrp.add(autoMode);
-        btngrp.add(winterMode);
-        btngrp.add(summerMode);
-        
+        temperature.setBackground(new java.awt.Color(240, 240, 240));
         temperature.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         temperature.setText("23.5");
         temperature.addActionListener(new java.awt.event.ActionListener() {
@@ -162,6 +140,7 @@ public class HvacController extends javax.swing.JFrame {
             }
         });
 
+        humidity.setBackground(new java.awt.Color(240, 240, 240));
         humidity.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         humidity.setText("30");
         humidity.addActionListener(new java.awt.event.ActionListener() {
@@ -170,6 +149,7 @@ public class HvacController extends javax.swing.JFrame {
             }
         });
 
+        airQuality.setBackground(new java.awt.Color(240, 240, 240));
         airQuality.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         airQuality.setText("212");
         airQuality.addActionListener(new java.awt.event.ActionListener() {
@@ -178,122 +158,192 @@ public class HvacController extends javax.swing.JFrame {
             }
         });
 
-        submit.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
+        submit.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         submit.setText("SUBMIT");
 
-        getInput.setText("Get inputs");
+        getInput.setBackground(new java.awt.Color(102, 51, 255));
+        getInput.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        getInput.setForeground(new java.awt.Color(255, 255, 255));
+        getInput.setText("Get Input");
         getInput.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 getInputActionPerformed(evt);
             }
         });
 
+        settings.setBackground(new java.awt.Color(255, 255, 255));
+        settings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/settings.png"))); // NOI18N
+        settings.setOpaque(false);
+        settings.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                settingsActionPerformed(evt);
+            }
+        });
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/control.png"))); // NOI18N
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(51, 51, 51)
-                        .addComponent(jLabel5)
-                        .addGap(170, 170, 170)
-                        .addComponent(autoMode)
-                        .addGap(100, 100, 100)
-                        .addComponent(summerMode)
-                        .addGap(108, 108, 108)
-                        .addComponent(winterMode))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(388, 388, 388)
-                        .addComponent(getInput)))
-                .addContainerGap(444, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(62, 62, 62)
+                .addGap(42, 42, 42)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(fanSpeedSetter, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 431, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel4)
-                                .addGap(130, 130, 130)
-                                .addComponent(fanon)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(fanoff)))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel1))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(humidity, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(temperature, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(airQuality, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(384, 384, 384))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(submit)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 383, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(41, 41, 41))))
+                        .addGap(60, 60, 60))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 591, Short.MAX_VALUE)
+                                .addGap(108, 108, 108))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addGap(364, 364, 364)))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(airQuality, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(fanoff)
+                            .addComponent(humidity, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(temperature, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 147, Short.MAX_VALUE)
+                        .addComponent(jLabel5)
+                        .addGap(23, 23, 23))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(fanSpeedSetter, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 731, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(259, 259, 259)
+                                .addComponent(fanon)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(getInput, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(settings)
+                        .addGap(51, 51, 51))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(34, 34, 34)
+                .addGap(60, 60, 60)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(autoMode)
-                        .addComponent(summerMode)
-                        .addComponent(winterMode))
-                    .addComponent(jLabel5))
-                .addGap(27, 27, 27)
-                .addComponent(getInput)
-                .addGap(27, 27, 27)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(getInput, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(78, 78, 78)
+                        .addComponent(jLabel1))
                     .addComponent(temperature, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(25, 25, 25)
+                .addGap(56, 56, 56)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(humidity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGap(44, 44, 44)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(airQuality, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(38, 38, 38)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4)
-                            .addComponent(fanon)
-                            .addComponent(fanoff))
-                        .addGap(18, 18, 18)
-                        .addComponent(fanSpeedSetter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 94, Short.MAX_VALUE)
-                        .addComponent(submit)
-                        .addGap(33, 33, 33))))
+                .addGap(36, 36, 36)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(fanon)
+                    .addComponent(fanoff))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(fanSpeedSetter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(388, 388, 388)
+                .addComponent(submit)
+                .addGap(80, 80, 80))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addComponent(settings)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel5)
+                .addGap(167, 167, 167)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(92, 92, 92))
+        );
+
+        autoMode.setBackground(new java.awt.Color(61, 60, 54));
+        autoMode.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        autoMode.setForeground(new java.awt.Color(255, 255, 255));
+        autoMode.setIcon(new javax.swing.ImageIcon(getClass().getResource("/auto.png"))); // NOI18N
+        autoMode.setText("   AUTO");
+        autoMode.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        autoMode.setOpaque(false);
+
+        summerMode.setBackground(new java.awt.Color(61, 60, 54));
+        summerMode.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        summerMode.setForeground(new java.awt.Color(255, 255, 255));
+        summerMode.setIcon(new javax.swing.ImageIcon(getClass().getResource("/heat.png"))); // NOI18N
+        summerMode.setText("   HEAT");
+        summerMode.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        summerMode.setOpaque(false);
+        summerMode.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                summerModeActionPerformed(evt);
+            }
+        });
+
+        winterMode.setBackground(new java.awt.Color(61, 60, 54));
+        winterMode.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        winterMode.setForeground(new java.awt.Color(255, 255, 255));
+        winterMode.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cool.png"))); // NOI18N
+        winterMode.setText("   COOL");
+        winterMode.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        winterMode.setOpaque(false);
+        winterMode.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                winterModeActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 5, Short.MAX_VALUE))
+                    .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(summerMode, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(autoMode, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(winterMode, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(49, 49, 49)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1545, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(43, 43, 43)
+                .addComponent(jLabel9)
+                .addGap(18, 18, 18)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(autoMode, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(summerMode)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(winterMode))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 987, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 9, Short.MAX_VALUE))
         );
 
         pack();
@@ -314,6 +364,18 @@ public class HvacController extends javax.swing.JFrame {
     public void getInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_getInputActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_getInputActionPerformed
+
+    public void summerModeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_summerModeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_summerModeActionPerformed
+
+    public void winterModeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_winterModeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_winterModeActionPerformed
+
+    public void settingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_settingsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_settingsActionPerformed
 
     /**
      * @param args the command line arguments
@@ -352,24 +414,27 @@ public class HvacController extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JTextField airQuality;
-    public javax.swing.JRadioButton autoMode;
+    public javax.swing.JButton autoMode;
+    public javax.swing.JSlider fanSpeedSetter;
     public javax.swing.JRadioButton fanoff;
     public javax.swing.JRadioButton fanon;
-    public javax.swing.JTextField humidity;
     public javax.swing.JButton getInput;
+    public javax.swing.JTextField humidity;
+    public javax.swing.JButton summerMode;
+    public javax.swing.JButton winterMode;
     public javax.swing.JLabel jLabel1;
     public javax.swing.JLabel jLabel2;
     public javax.swing.JLabel jLabel3;
     public javax.swing.JLabel jLabel4;
     public javax.swing.JLabel jLabel5;
-    public ImagePanel jPanel1;
-    public javax.swing.JRadioButton summerMode;
+    public javax.swing.JLabel jLabel9;
+    public javax.swing.JPanel jPanel1;
+    public javax.swing.JPanel jPanel2;
     public javax.swing.JScrollPane jScrollPane1;
-    public javax.swing.JSlider fanSpeedSetter;
+    public javax.swing.JSeparator jSeparator1;
     public javax.swing.JTextArea jTextArea1;
+    public javax.swing.JButton settings;
     public javax.swing.JButton submit;
     public javax.swing.JTextField temperature;
-    public javax.swing.JRadioButton winterMode;
-   
     // End of variables declaration//GEN-END:variables
 }
