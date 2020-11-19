@@ -41,7 +41,7 @@ public class Settings extends javax.swing.JFrame {
         cancelSettings = new javax.swing.JButton();
         viewRecords = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(124, 120, 110));
 

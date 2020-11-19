@@ -52,3 +52,597 @@ Nov 17, 2020 12:07:44 AM Hvac$7 actionPerformed
 INFO: Preparing to send email.....
 Nov 17, 2020 12:07:52 AM Hvac$7 actionPerformed
 INFO: Message Sent Successfully!!!
+Nov 17, 2020 11:47:58 AM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 11:48:02 AM Hvac$6 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 11:48:03 AM Hvac$6 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 11:48:10 AM Hvac$7 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 17, 2020 11:48:10 AM Hvac$7 actionPerformed
+SEVERE: Health Alert!!! Dont enter the CC3 building if there isnt any need.
+Nov 17, 2020 11:48:10 AM Hvac$7 actionPerformed
+INFO: Preparing to send email.....
+Nov 17, 2020 11:48:16 AM Hvac$7 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 17, 2020 11:48:31 AM Hvac$6 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 11:48:35 AM Hvac$7 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 17, 2020 11:48:35 AM Hvac$7 actionPerformed
+SEVERE: Hazardous Air Quality. Evacuate the CC3 building as soon as possible
+Nov 17, 2020 11:48:35 AM Hvac$7 actionPerformed
+INFO: Preparing to send email.....
+Nov 17, 2020 11:48:40 AM Hvac$7 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 17, 2020 11:51:12 AM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 11:51:51 AM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 11:52:24 AM Hvac$6 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 11:52:26 AM Hvac$6 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 11:52:31 AM Hvac$7 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 17, 2020 11:52:31 AM Hvac$7 actionPerformed
+INFO: Air Quality is unhealty for sensitive groups. Sensitive group must take necessary precautions.
+Nov 17, 2020 11:52:31 AM Hvac$7 actionPerformed
+INFO: Preparing to send email.....
+Nov 17, 2020 11:52:38 AM Hvac$7 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 17, 2020 11:55:29 AM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 11:55:32 AM Hvac$6 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 11:55:36 AM Hvac$7 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 17, 2020 11:55:36 AM Hvac$7 actionPerformed
+INFO: Air Quality is unhealty for sensitive groups. Sensitive group must take necessary precautions.
+Nov 17, 2020 11:55:36 AM Hvac$7 actionPerformed
+INFO: Preparing to send email.....
+Nov 17, 2020 11:55:43 AM Hvac$7 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 17, 2020 11:57:20 AM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 11:57:23 AM Hvac$6 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 11:57:24 AM Hvac$7 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 17, 2020 11:57:24 AM Hvac$7 actionPerformed
+SEVERE: Hazardous Air Quality. Evacuate the CC3 building as soon as possible
+Nov 17, 2020 11:57:24 AM Hvac$7 actionPerformed
+INFO: Preparing to send email.....
+Nov 17, 2020 11:57:30 AM Hvac$7 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 17, 2020 11:58:13 AM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 11:58:16 AM Hvac$6 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 11:58:19 AM Hvac$7 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 17, 2020 11:58:19 AM Hvac$7 actionPerformed
+INFO: Air Quality is unhealty for sensitive groups. Sensitive group must take necessary precautions.
+Nov 17, 2020 11:58:19 AM Hvac$7 actionPerformed
+INFO: Preparing to send email.....
+Nov 17, 2020 11:58:25 AM Hvac$7 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 17, 2020 12:00:50 PM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 12:01:13 PM Hvac$6 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 12:01:15 PM Hvac$6 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 12:01:20 PM Hvac$7 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 17, 2020 12:01:20 PM Hvac$7 actionPerformed
+INFO: Air Quality is unhealty for sensitive groups. Sensitive group must take necessary precautions.
+Nov 17, 2020 12:01:20 PM Hvac$7 actionPerformed
+INFO: Preparing to send email.....
+Nov 17, 2020 12:01:26 PM Hvac$7 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 17, 2020 12:03:27 PM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 12:03:30 PM Hvac$6 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 12:03:34 PM Hvac$7 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 17, 2020 12:03:34 PM Hvac$7 actionPerformed
+SEVERE: Hazardous Air Quality. Evacuate the CC3 building as soon as possible
+Nov 17, 2020 12:03:34 PM Hvac$7 actionPerformed
+INFO: Preparing to send email.....
+Nov 17, 2020 12:03:44 PM Hvac$7 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 17, 2020 12:04:55 PM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 12:04:58 PM Hvac$6 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 12:05:02 PM Hvac$7 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 17, 2020 12:05:02 PM Hvac$7 actionPerformed
+SEVERE: Health Alert!!! Dont enter the CC3 building if there isnt any need.
+Nov 17, 2020 12:05:02 PM Hvac$7 actionPerformed
+INFO: Preparing to send email.....
+Nov 17, 2020 12:05:08 PM Hvac$7 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 17, 2020 12:19:54 PM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 12:24:35 PM Hvac$6 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 12:24:37 PM Hvac$6 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 12:24:51 PM Hvac$7 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 17, 2020 12:24:51 PM Hvac$7 actionPerformed
+INFO: Preparing to send email.....
+Nov 17, 2020 12:24:58 PM Hvac$7 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 17, 2020 4:27:42 PM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 4:29:05 PM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 4:40:32 PM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 4:41:22 PM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 4:45:40 PM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 4:46:22 PM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 4:47:35 PM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 4:47:59 PM Hvac$6 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 4:48:07 PM Hvac$7 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 17, 2020 4:48:07 PM Hvac$7 actionPerformed
+WARNING: Air Quality is unhealthy for everyone. Faculties should ensure that no classes are being conducted.
+Nov 17, 2020 4:48:07 PM Hvac$7 actionPerformed
+INFO: Preparing to send email.....
+Nov 17, 2020 4:48:16 PM Hvac$7 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 17, 2020 4:49:46 PM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 4:49:56 PM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 4:49:59 PM Hvac$6 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 4:50:06 PM Hvac$7 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 17, 2020 4:50:06 PM Hvac$7 actionPerformed
+SEVERE: Hazardous Air Quality. Evacuate the CC3 building as soon as possible
+Nov 17, 2020 4:50:06 PM Hvac$7 actionPerformed
+INFO: Preparing to send email.....
+Nov 17, 2020 4:50:13 PM Hvac$7 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 17, 2020 8:19:18 PM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 8:20:49 PM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 8:21:02 PM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 8:21:10 PM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 8:21:14 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 8:21:23 PM Hvac$10 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 17, 2020 8:21:23 PM Hvac$10 actionPerformed
+SEVERE: Health Alert!!! Dont enter the CC3 building if there isnt any need.
+Nov 17, 2020 8:21:23 PM Hvac$10 actionPerformed
+INFO: Preparing to send email.....
+Nov 17, 2020 8:21:30 PM Hvac$10 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 17, 2020 8:21:56 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 8:22:01 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 8:22:03 PM Hvac$10 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 17, 2020 8:22:03 PM Hvac$10 actionPerformed
+WARNING: Air Quality is unhealthy for everyone. Faculties should ensure that no classes are being conducted.
+Nov 17, 2020 8:22:03 PM Hvac$10 actionPerformed
+INFO: Preparing to send email.....
+Nov 17, 2020 8:22:09 PM Hvac$10 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 17, 2020 8:22:38 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 8:22:40 PM Hvac$10 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 17, 2020 8:22:40 PM Hvac$10 actionPerformed
+INFO: Preparing to send email.....
+Nov 17, 2020 8:22:45 PM Hvac$10 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 17, 2020 8:23:57 PM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 8:24:00 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 8:24:04 PM Hvac$10 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 17, 2020 8:24:04 PM Hvac$10 actionPerformed
+SEVERE: Health Alert!!! Dont enter the CC3 building if there isnt any need.
+Nov 17, 2020 8:24:04 PM Hvac$10 actionPerformed
+INFO: Preparing to send email.....
+Nov 17, 2020 8:24:10 PM Hvac$10 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 17, 2020 8:24:21 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 8:24:23 PM Hvac$10 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 17, 2020 8:24:23 PM Hvac$10 actionPerformed
+INFO: Air Quality is unhealty for sensitive groups. Sensitive group must take necessary precautions.
+Nov 17, 2020 8:24:23 PM Hvac$10 actionPerformed
+INFO: Preparing to send email.....
+Nov 17, 2020 8:24:28 PM Hvac$10 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 17, 2020 8:34:03 PM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 8:34:06 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 8:34:11 PM Hvac$10 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 17, 2020 8:34:11 PM Hvac$10 actionPerformed
+WARNING: Air Quality is unhealthy for everyone. Faculties should ensure that no classes are being conducted.
+Nov 17, 2020 8:34:11 PM Hvac$10 actionPerformed
+INFO: Preparing to send email.....
+Nov 17, 2020 8:34:18 PM Hvac$10 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 17, 2020 8:35:12 PM Hvac main
+INFO: Starting HVAC System
+Nov 17, 2020 8:35:15 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 17, 2020 8:35:18 PM Hvac$10 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 17, 2020 8:35:18 PM Hvac$10 actionPerformed
+INFO: Air Quality is unhealty for sensitive groups. Sensitive group must take necessary precautions.
+Nov 17, 2020 8:35:18 PM Hvac$10 actionPerformed
+INFO: Preparing to send email.....
+Nov 17, 2020 8:35:25 PM Hvac$10 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 18, 2020 1:20:12 AM Hvac main
+INFO: Starting HVAC System
+Nov 18, 2020 1:20:20 AM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 1:20:25 AM Hvac$10 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 18, 2020 1:20:25 AM Hvac$10 actionPerformed
+SEVERE: Hazardous Air Quality. Evacuate the CC3 building as soon as possible
+Nov 18, 2020 1:20:25 AM Hvac$10 actionPerformed
+INFO: Preparing to send email.....
+Nov 18, 2020 1:20:34 AM Hvac$10 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 18, 2020 1:20:55 AM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 1:20:58 AM Hvac$10 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 18, 2020 1:20:58 AM Hvac$10 actionPerformed
+INFO: Preparing to send email.....
+Nov 18, 2020 1:21:03 AM Hvac$10 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 18, 2020 1:21:40 AM Hvac main
+INFO: Starting HVAC System
+Nov 18, 2020 1:21:44 AM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 1:21:46 AM Hvac$10 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 18, 2020 1:21:46 AM Hvac$10 actionPerformed
+SEVERE: Health Alert!!! Dont enter the CC3 building if there isnt any need.
+Nov 18, 2020 1:21:46 AM Hvac$10 actionPerformed
+INFO: Preparing to send email.....
+Nov 18, 2020 1:21:54 AM Hvac$10 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 18, 2020 4:39:31 PM Hvac main
+INFO: Starting HVAC System
+Nov 18, 2020 4:39:40 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 4:39:43 PM Hvac$10 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 18, 2020 4:39:43 PM Hvac$10 actionPerformed
+SEVERE: Hazardous Air Quality. Evacuate the CC3 building as soon as possible
+Nov 18, 2020 4:39:43 PM Hvac$10 actionPerformed
+INFO: Preparing to send email.....
+Nov 18, 2020 4:39:53 PM Hvac$10 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 18, 2020 4:48:28 PM Hvac main
+INFO: Starting HVAC System
+Nov 18, 2020 4:48:35 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 4:48:39 PM Hvac$10 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 18, 2020 4:48:39 PM Hvac$10 actionPerformed
+SEVERE: Hazardous Air Quality. Evacuate the CC3 building as soon as possible
+Nov 18, 2020 4:48:39 PM Hvac$10 actionPerformed
+INFO: Preparing to send email.....
+Nov 18, 2020 4:48:47 PM Hvac$10 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 18, 2020 4:50:38 PM Hvac main
+INFO: Starting HVAC System
+Nov 18, 2020 4:50:41 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 4:50:45 PM Hvac$10 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 18, 2020 4:50:45 PM Hvac$10 actionPerformed
+WARNING: Air Quality is unhealthy for everyone. Faculties should ensure that no classes are being conducted.
+Nov 18, 2020 4:50:45 PM Hvac$10 actionPerformed
+INFO: Preparing to send email.....
+Nov 18, 2020 4:50:53 PM Hvac$10 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 18, 2020 4:51:56 PM Hvac main
+INFO: Starting HVAC System
+Nov 18, 2020 4:52:00 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 4:52:01 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 4:52:02 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 4:52:02 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 4:52:03 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 4:52:04 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 4:52:05 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 4:52:08 PM Hvac$10 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 18, 2020 4:52:08 PM Hvac$10 actionPerformed
+INFO: Air Quality is unhealty for sensitive groups. Sensitive group must take necessary precautions.
+Nov 18, 2020 4:52:08 PM Hvac$10 actionPerformed
+INFO: Preparing to send email.....
+Nov 18, 2020 4:52:17 PM Hvac$10 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 18, 2020 7:10:56 PM Hvac main
+INFO: Starting HVAC System
+Nov 18, 2020 7:15:30 PM Hvac main
+INFO: Starting HVAC System
+Nov 18, 2020 7:16:13 PM Hvac main
+INFO: Starting HVAC System
+Nov 18, 2020 7:16:23 PM Hvac main
+INFO: Starting HVAC System
+Nov 18, 2020 7:17:35 PM Hvac main
+INFO: Starting HVAC System
+Nov 18, 2020 7:18:45 PM Hvac main
+INFO: Starting HVAC System
+Nov 18, 2020 7:19:40 PM Hvac main
+INFO: Starting HVAC System
+Nov 18, 2020 7:20:14 PM Hvac main
+INFO: Starting HVAC System
+Nov 18, 2020 7:25:33 PM Hvac main
+INFO: Starting HVAC System
+Nov 18, 2020 7:26:36 PM Hvac main
+INFO: Starting HVAC System
+Nov 18, 2020 7:26:57 PM Hvac main
+INFO: Starting HVAC System
+Nov 18, 2020 7:36:31 PM Hvac main
+INFO: Starting HVAC System
+Nov 18, 2020 7:38:01 PM Hvac main
+INFO: Starting HVAC System
+Nov 18, 2020 7:43:03 PM Hvac main
+INFO: Starting HVAC System
+Nov 18, 2020 7:47:47 PM Hvac main
+INFO: Starting HVAC System
+Nov 18, 2020 7:48:30 PM Hvac main
+INFO: Starting HVAC System
+Nov 18, 2020 7:48:36 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 7:48:38 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 7:48:41 PM Hvac$10 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 18, 2020 7:48:41 PM Hvac$10 actionPerformed
+INFO: Turn Fan ON.
+Nov 18, 2020 7:48:41 PM Hvac$10 actionPerformed
+INFO: Setting Fan Speed to50
+Nov 18, 2020 7:48:41 PM Hvac$10 actionPerformed
+INFO: Starting Heater
+Nov 18, 2020 7:48:41 PM Hvac$10 actionPerformed
+INFO: Setting AC Temp to 25.0
+Nov 18, 2020 7:48:41 PM Hvac$10 actionPerformed
+INFO: Turning Exhaust ON.
+Nov 18, 2020 7:48:41 PM Hvac$10 actionPerformed
+INFO: Setting exhaust speed to 1440
+Nov 18, 2020 7:48:41 PM Hvac$10 actionPerformed
+INFO: Preparing to send email.....
+Nov 18, 2020 7:48:51 PM Hvac$10 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 18, 2020 7:49:14 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 7:49:16 PM Hvac$10 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 18, 2020 7:49:16 PM Hvac$10 actionPerformed
+INFO: Turn Fan ON.
+Nov 18, 2020 7:49:16 PM Hvac$10 actionPerformed
+INFO: Setting Fan Speed to50
+Nov 18, 2020 7:49:16 PM Hvac$10 actionPerformed
+SEVERE: Health Alert!!! Dont enter the CC3 building if there isnt any need.
+Nov 18, 2020 7:49:16 PM Hvac$10 actionPerformed
+INFO: Turning Exhaust ON.
+Nov 18, 2020 7:49:16 PM Hvac$10 actionPerformed
+INFO: Setting exhaust speed to 1981
+Nov 18, 2020 7:49:16 PM Hvac$10 actionPerformed
+INFO: Preparing to send email.....
+Nov 18, 2020 7:49:22 PM Hvac$10 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 18, 2020 7:58:12 PM Hvac main
+INFO: Starting HVAC System
+Nov 18, 2020 10:47:28 PM Hvac main
+INFO: Starting HVAC System
+Nov 18, 2020 10:47:31 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 10:47:31 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 10:47:33 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 10:47:33 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 10:47:34 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 10:47:35 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 10:47:36 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 10:47:37 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 10:47:38 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 10:47:39 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 10:47:39 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 10:47:40 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 18, 2020 10:47:45 PM Hvac$10 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 18, 2020 10:47:45 PM Hvac$10 actionPerformed
+INFO: Turn Fan ON.
+Nov 18, 2020 10:47:45 PM Hvac$10 actionPerformed
+INFO: Setting Fan Speed to50
+Nov 18, 2020 10:47:45 PM Hvac$10 actionPerformed
+INFO: Turning AC ON.
+Nov 18, 2020 10:47:45 PM Hvac$10 actionPerformed
+INFO: Set AC temperature to 24 degree Celsius.
+Nov 18, 2020 10:47:45 PM Hvac$10 actionPerformed
+INFO: Starting AC
+Nov 18, 2020 10:47:45 PM Hvac$10 actionPerformed
+INFO: Setting AC Temp to 24.0
+Nov 18, 2020 10:47:45 PM Hvac$10 actionPerformed
+INFO: Turning Exhaust ON.
+Nov 18, 2020 10:47:45 PM Hvac$10 actionPerformed
+INFO: Setting exhaust speed to 1440
+Nov 18, 2020 10:47:45 PM Hvac$10 actionPerformed
+INFO: Preparing to send email.....
+Nov 18, 2020 10:47:53 PM Hvac$10 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 19, 2020 12:50:40 AM Hvac main
+INFO: Starting HVAC System
+Nov 19, 2020 12:50:51 AM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 19, 2020 12:50:54 AM Hvac$10 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 19, 2020 12:50:54 AM Hvac$10 actionPerformed
+INFO: Turn Fan ON.
+Nov 19, 2020 12:50:54 AM Hvac$10 actionPerformed
+INFO: Setting Fan Speed to50
+Nov 19, 2020 12:50:54 AM Hvac$10 actionPerformed
+WARNING: Air Quality is unhealthy for everyone. Faculties should ensure that no classes are being conducted.
+Nov 19, 2020 12:50:54 AM Hvac$10 actionPerformed
+INFO: Turning Exhaust ON.
+Nov 19, 2020 12:50:54 AM Hvac$10 actionPerformed
+INFO: Setting exhaust speed to 1589
+Nov 19, 2020 12:50:54 AM Hvac$10 actionPerformed
+INFO: Preparing to send email.....
+Nov 19, 2020 12:51:02 AM Hvac$10 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 19, 2020 12:56:54 AM Hvac main
+INFO: Starting HVAC System
+Nov 19, 2020 12:56:57 AM Hvac$10 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 19, 2020 12:56:57 AM Hvac$10 actionPerformed
+INFO: Turn Fan ON.
+Nov 19, 2020 12:56:57 AM Hvac$10 actionPerformed
+INFO: Setting Fan Speed to50
+Nov 19, 2020 12:56:57 AM Hvac$10 actionPerformed
+SEVERE: Health Alert!!! Dont enter the CC3 building if there isnt any need.
+Nov 19, 2020 12:56:57 AM Hvac$10 actionPerformed
+INFO: Turning Exhaust ON.
+Nov 19, 2020 12:56:57 AM Hvac$10 actionPerformed
+INFO: Setting exhaust speed to 1762
+Nov 19, 2020 12:56:57 AM Hvac$10 actionPerformed
+INFO: Preparing to send email.....
+Nov 19, 2020 12:57:04 AM Hvac$10 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 19, 2020 12:59:07 AM Hvac main
+INFO: Starting HVAC System
+Nov 19, 2020 12:59:09 AM Hvac$10 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 19, 2020 12:59:11 AM Hvac$10 actionPerformed
+WARNING: Please select any mode.
+Nov 19, 2020 6:20:31 PM Hvac main
+INFO: Starting HVAC System
+Nov 19, 2020 6:20:36 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 19, 2020 6:20:39 PM Hvac$10 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 19, 2020 6:20:39 PM Hvac$10 actionPerformed
+INFO: Turn Fan ON.
+Nov 19, 2020 6:20:39 PM Hvac$10 actionPerformed
+INFO: Setting Fan Speed to50
+Nov 19, 2020 6:20:39 PM Hvac$10 actionPerformed
+INFO: Turning Heater ON.
+Nov 19, 2020 6:20:39 PM Hvac$10 actionPerformed
+INFO: Starting Heater
+Nov 19, 2020 6:20:39 PM Hvac$10 actionPerformed
+INFO: Setting AC Temp to 22.0
+Nov 19, 2020 6:20:39 PM Hvac$10 actionPerformed
+WARNING: Air Quality is unhealthy for everyone. Faculties should ensure that no classes are being conducted.
+Nov 19, 2020 6:20:39 PM Hvac$10 actionPerformed
+INFO: Turning Exhaust ON.
+Nov 19, 2020 6:20:39 PM Hvac$10 actionPerformed
+INFO: Setting exhaust speed to 1670
+Nov 19, 2020 6:20:39 PM Hvac$10 actionPerformed
+INFO: Preparing to send email.....
+Nov 19, 2020 6:20:48 PM Hvac$10 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 19, 2020 6:50:47 PM Hvac main
+INFO: Starting HVAC System
+Nov 19, 2020 6:50:50 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 19, 2020 6:50:51 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 19, 2020 6:50:52 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 19, 2020 6:50:53 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 19, 2020 6:50:57 PM Hvac$10 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 19, 2020 6:50:57 PM Hvac$10 actionPerformed
+INFO: Turn Fan ON.
+Nov 19, 2020 6:50:57 PM Hvac$10 actionPerformed
+INFO: Setting Fan Speed to50
+Nov 19, 2020 6:50:57 PM Hvac$10 actionPerformed
+INFO: Turning Heater ON.
+Nov 19, 2020 6:50:57 PM Hvac$10 actionPerformed
+INFO: Set heater temperature to 24 degree Celsius.
+Nov 19, 2020 6:50:57 PM Hvac$10 actionPerformed
+INFO: Starting Heater
+Nov 19, 2020 6:50:57 PM Hvac$10 actionPerformed
+INFO: Setting AC Temp to 24.0
+Nov 19, 2020 6:50:57 PM Hvac$10 actionPerformed
+SEVERE: Health Alert!!! Dont enter the CC3 building if there isnt any need.
+Nov 19, 2020 6:50:57 PM Hvac$10 actionPerformed
+INFO: Turning Exhaust ON.
+Nov 19, 2020 6:50:57 PM Hvac$10 actionPerformed
+INFO: Setting exhaust speed to 1759
+Nov 19, 2020 6:50:57 PM Hvac$10 actionPerformed
+INFO: Preparing to send email.....
+Nov 19, 2020 6:51:06 PM Hvac$10 actionPerformed
+INFO: Message Sent Successfully!!!
+Nov 19, 2020 7:24:05 PM Hvac main
+INFO: Starting HVAC System
+Nov 19, 2020 7:24:18 PM Hvac$9 actionPerformed
+INFO: Get input from the sensors
+Nov 19, 2020 7:24:21 PM Hvac$10 actionPerformed
+INFO: Submitting all the data to HVAC class
+Nov 19, 2020 7:24:21 PM Hvac$10 actionPerformed
+INFO: Turn Fan ON.
+Nov 19, 2020 7:24:21 PM Hvac$10 actionPerformed
+INFO: Setting Fan Speed to50
+Nov 19, 2020 7:24:21 PM Hvac$10 actionPerformed
+INFO: Turning Heater ON.
+Nov 19, 2020 7:24:21 PM Hvac$10 actionPerformed
+INFO: Set heater temperature to 24 degree Celsius.
+Nov 19, 2020 7:24:21 PM Hvac$10 actionPerformed
+INFO: Starting Heater
+Nov 19, 2020 7:24:21 PM Hvac$10 actionPerformed
+INFO: Setting AC Temp to 24.0
+Nov 19, 2020 7:24:21 PM Hvac$10 actionPerformed
+SEVERE: Hazardous Air Quality. Evacuate the CC3 building as soon as possible
+Nov 19, 2020 7:24:21 PM Hvac$10 actionPerformed
+INFO: Turning Exhaust ON.
+Nov 19, 2020 7:24:21 PM Hvac$10 actionPerformed
+INFO: Setting exhaust speed to 2390
+Nov 19, 2020 7:24:21 PM Hvac$10 actionPerformed
+INFO: Preparing to send email.....
+Nov 19, 2020 7:24:29 PM Hvac$10 actionPerformed
+INFO: Message Sent Successfully!!!
