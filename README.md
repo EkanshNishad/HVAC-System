@@ -1,16 +1,16 @@
 # HVAC-System
 
-##System requirements
+## System requirements
 
--JDK version 8 or above.
--JRE version 1.8 or above.
+- JDK version 8 or above.
+- JRE version 1.8 or above.
 
-##Libraries used
+## Libraries used
 
--activation.jar for JavaActivation Framework.
--mail.jar for JavaMail API.
+- activation.jar for JavaActivation Framework.
+- mail.jar for JavaMail API.
 
-##Execution Instructions
+## Execution Instructions
 
 1. Extract the zip file HVAC System.
 2. Find the jar file HVAC System and run it by double-clicking it. Make sure you have JRE 1.8 or above installed in your computer.
@@ -26,13 +26,13 @@
   - Should have an active internet connection for sending email
 8. Now move to the Hvac Navigation Screen here you would see all the configurations of the HVAC System based on the given set of Inputs.
 
-##Features
+## Features
 
 - Maintains optimum Temperature in the surroundings.
 - Control humidity in the surroundings.
 - Purify and refresh the air in the surroundings.
 
-##Presented By:
+## Presented By:
 
 Gurmeet Singh						IIT2019121
 Sagar Barman						IIT2019140
