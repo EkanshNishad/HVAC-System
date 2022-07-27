@@ -32,6 +32,14 @@
 - Control humidity in the surroundings.
 - Purify and refresh the air in the surroundings.
 
+## Preview
+
+<p align="center">
+<img src="https://github.com/EkanshNishad/HVAC-System/blob/main/Progress/final%20images/1.png" width="350">
+<img src="https://github.com/EkanshNishad/HVAC-System/blob/main/Progress/final%20images/2.png" width="350">
+<img src="https://github.com/EkanshNishad/HVAC-System/blob/main/Progress/final%20images/3.png" width="350">
+</p>
+
 ## Presented By:
 
 Gurmeet Singh						IIT2019121
